@@ -99,7 +99,7 @@ SMODS.Joker {
       card.ability.extra.mult = card.ability.extra.mult + add
 
       if card.ability.extra.mult <= card.ability.extra.mult_min then
-        -- Delete Joker. Copied from Ice Cream.
+        -- Delete Joker. Based off of Ice Cream.
         G.E_MANAGER:add_event(Event({
           func = function()
             play_sound('tarot1')
@@ -228,6 +228,7 @@ SMODS.Joker {
   cost = 7,
   calculate = function(self, card, context)
     if context.before and not context.blueprint then
+      -- Based off of Vampire.
       for k, v in ipairs(context.scoring_hand) do
         if v.config.center == G.P_CENTERS.m_stone and not v.debuff and not v.vampired then 
           v:set_seal('Gold', nil, true)
@@ -281,6 +282,56 @@ SMODS.Joker {
             end
           }))
         end
+      end
+    end
+  end
+}
+
+SMODS.Joker {
+  key = 'addiction',
+  loc_txt = {
+    name = 'Addiction',
+    text = {
+      'If you play your most played hand,',
+      'each scored {C:attention}card{} permanently gains {C:chips}chips{} equal to',
+      '{C:attention}#1#X the number of times it has been played{}'
+    }
+  },
+
+  config = { extra = { hand_count_mult = 3 } },
+  unlocked = true,
+  discovered = true,
+  rarity = 2, -- Uncommon
+  atlas = 'Sculio',
+  pos = { x = 7, y = 0 },
+  cost = 7,
+  loc_vars = function(self, info_queue, card)
+    return { vars = { card.ability.extra.hand_count_mult } }
+  end,
+  calculate = function(self, card, context)
+    if context.individual and context.cardarea == G.play then
+      -- Based off of Obelisk.
+      most_played = true
+      most_played_count = (G.GAME.hands[context.scoring_name].played or 0)
+
+      for k, v in pairs(G.GAME.hands) do
+        if k ~= context.scoring_name and v.played >= most_played_count and v.visible then
+          most_played = false
+        end
+      end
+
+      if most_played then
+        perma_bonus_gain = most_played_count * card.ability.extra.hand_count_mult
+
+        -- Based off of Hiker.
+        context.other_card.ability.perma_bonus = context.other_card.ability.perma_bonus or 0
+        context.other_card.ability.perma_bonus = context.other_card.ability.perma_bonus + perma_bonus_gain
+  
+        return {
+          extra = {message = localize('k_upgrade_ex'), colour = G.C.CHIPS},
+          colour = G.C.CHIPS,
+          card = card
+        }
       end
     end
   end

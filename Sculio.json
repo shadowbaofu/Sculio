@@ -1,0 +1,12 @@
+{
+  "id": "Sculio",
+  "name": "Sculio",
+  "author": ["crmykybord", "chily", "BrandonE"],
+  "description": "Vanilla modpack for Balatro.",
+  "prefix": "Sculio",
+  "main_file": "Sculio.lua",
+  "dependencies": [
+    "Steamodded (>=1.0.0~ALPHA-1225a)"
+  ],
+  "version": "1.0.0"
+}

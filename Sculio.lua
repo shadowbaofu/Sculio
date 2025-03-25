@@ -10,13 +10,43 @@ SMODS.Atlas {
 }
 
 SMODS.Joker {
+  key = 'schrodinger',
+  loc_txt = {
+    name = 'Schrodinger\'s Joker',
+    text = {
+      "{C:attention}#1# in #2#{} chance",
+      "for {X:mult,C:white}X#3#{} Mult"
+    }
+  },
+
+  config = { extra = { odds = 2, x_mult = 2 } },
+  unlocked = true,
+  discovered = true,
+  rarity = 1, -- Common
+  atlas = 'Sculio',
+  pos = { x = 0, y = 0 },
+  cost = 4,
+  loc_vars = function(self, info_queue, card)
+    return { vars = { (G.GAME.probabilities.normal or 1), self.config.extra.odds, self.config.extra.x_mult } }
+  end,
+  calculate = function(self, card, context)
+    if context.joker_main and pseudorandom('schrodinger') < G.GAME.probabilities.normal / self.config.extra.odds then
+      return {
+        Xmult_mod = card.ability.extra.x_mult,
+        message = localize { type = 'variable', key = 'a_xmult', vars = { card.ability.extra.x_mult } }
+      }
+    end
+  end
+}
+
+SMODS.Joker {
   key = 'stonks',
   loc_txt = {
     name = 'Wall Street Joker',
     text = {
       "The {C:mult}+Mult{} for this Joker",
       "{C:attention}doubles{} after every boss blind",
-      "{C:inactive}(Currently {C:mult}+#1#{})"
+      "{C:inactive}(Currently {C:mult}+#1#{}{C:inactive})"
     }
   },
 

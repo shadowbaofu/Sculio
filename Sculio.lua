@@ -14,7 +14,7 @@ SMODS.Joker {
   loc_txt = {
     name = 'Schrodinger\'s Joker',
     text = {
-      "{C:attention}#1# in #2#{} chance",
+      "{C:green}#1# in #2#{} chance",
       "for {X:mult,C:white}X#3#{} Mult"
     }
   },

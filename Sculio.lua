@@ -45,7 +45,7 @@ SMODS.Joker {
     name = 'House Party',
     text = {
       "This Joker gains {X:mult,C:white}X#2#{} Mult",
-      "per consecutive hand played",
+      "per {C:attention}consecutive{} hand played",
       "containing a {C:attention}Full House{}",
       "{C:inactive}(Currently {X:mult,C:white}X#1#{}{C:inactive})",
     }

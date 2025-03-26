@@ -379,12 +379,12 @@ SMODS.Joker {
     text = {
       'Steals {C:money}$#2#{} of {C:attention}sell{} value',
       'from every other {C:attention}Joker{} if available.',
-      'Gains {X:mult,C:white}X#3#{} Mult for each {C:money}$#4#{} stolen this way',
+      'Gains {X:mult,C:white}X#3#{} Mult for each {C:money}$#4#{} stolen',
       '{C:inactive}(Currently {X:mult,C:white}X#1#{}{C:inactive})',
     }
   },
 
-  config = { extra = { x_mult = 1, dollar_steal = 1, x_mult_scale = 0.1, dollar_scale = 1 } },
+  config = { is_coupon = true, extra = { x_mult = 1, dollar_steal = 1, x_mult_scale = 0.1, dollar_scale = 1 } },
   unlocked = true,
   discovered = true,
   rarity = 3, -- Rare
@@ -399,7 +399,7 @@ SMODS.Joker {
       stolen = 0
 
       for k, v in ipairs(G.jokers.cards) do
-        if v ~= card and v.set_cost and v.sell_cost > 0 then
+        if (not v.ability or not v.ability.is_coupon) and v.set_cost and v.sell_cost > 0 then
           if v.sell_cost < card.ability.extra.dollar_steal then
             steal = v.sell_cost
           else

@@ -45,7 +45,7 @@ SMODS.Joker {
     name = 'Impossible Stairs',
     text = {
       'This Joker gains between {C:mult}#3#{}',
-      'and {C:mult}#2#{} Mult per hand played.',
+      'and {C:mult}#2#{} Mult per hand played',
       'Destroyed if Mult reaches {C:mult}#4#{} Mult',
       '{C:inactive}(Currently {C:mult}#1#{}{C:inactive})'
     }
@@ -269,7 +269,7 @@ SMODS.Joker {
   calculate = function(self, card, context)
     if context.before and not context.blueprint then
       for k, v in ipairs(context.scoring_hand) do
-        if v.config.center == G.P_CENTERS.c_base and pseudorandom('pop_star') < G.GAME.probabilities.normal / card.ability.extra.odds then
+        if pseudorandom('pop_star') < G.GAME.probabilities.normal / card.ability.extra.odds then
           math.randomseed(pseudorandom('pop_star'))
           enhancement_index = math.random(1, #G.P_CENTER_POOLS['Enhanced'])
           enhancement = G.P_CENTER_POOLS['Enhanced'][enhancement_index]
@@ -342,8 +342,10 @@ SMODS.Joker {
   loc_txt = {
     name = 'Handheld',
     text = {
-      'Scored {C:clubs}Clubs{} and {C:spades}Spades{} become {C:attention}Wild Cards{}',
-      'if they are not already enhanced'
+      'Scored {C:clubs}Clubs{} and {C:spades}Spades{} become',
+      '{C:attention}Wild Cards{} if they are not',
+      'already enhanced'
+      
     }
   },
 
@@ -377,8 +379,8 @@ SMODS.Joker {
   loc_txt = {
     name = 'Chicken Coupon',
     text = {
-      'Steals {C:money}$#2#{} of {C:attention}sell{} value',
-      'from every other {C:attention}Joker{} if available.',
+      'Steals {C:money}$#2#{} of {C:attention}sell{} value from every other',
+      ' {C:attention}Joker{} if available at the end of a blind',
       'Gains {X:mult,C:white}X#3#{} Mult for each {C:money}$#4#{} stolen',
       '{C:inactive}(Currently {X:mult,C:white}X#1#{}{C:inactive})',
     }

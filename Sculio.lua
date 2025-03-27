@@ -380,7 +380,7 @@ SMODS.Joker {
     name = 'Chicken Coupon',
     text = {
       'Steals {C:money}$#2#{} of {C:attention}sell{} value from every other',
-      ' {C:attention}Joker{} if available at the end of a blind',
+      '{C:attention}Joker{} if available at the end of a blind',
       'Gains {X:mult,C:white}X#3#{} Mult for each {C:money}$#4#{} stolen',
       '{C:inactive}(Currently {X:mult,C:white}X#1#{}{C:inactive})',
     }

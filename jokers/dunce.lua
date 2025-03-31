@@ -4,8 +4,9 @@ SMODS.Joker {
     name = 'Dunce',
     text = {
       'Copies the ability of the',
-      'rightmost {C:attention}Joker{} and',
-      'temporarily disables {C:attention}Joker{} to the right',
+      '{C:attention}rightmost{} Joker and',
+      'temporarily disables Joker',
+      '{C:attention}to the right{}',
     }
   },
 

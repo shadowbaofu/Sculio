@@ -1,10 +1,10 @@
 SMODS.Joker {
-  key = 'puck',
+  key = 'pop',
   loc_txt = {
-    name = 'Puck',
+    name = 'Figurine',
     text = {
-      'When a card with an {C:attention}edition{} is scored,',
-      'this Joker gains {C:attention}half{} the {C:attention}edition\'s bonus{}.',
+      'When a Joker with an {C:attention}edition{} is sold,',
+      'this Joker gains the {C:attention}edition\'s bonus{}.',
       '{C:inactive}(Currently {C:chips}+#1#{}{C:inactive}, {C:mult}+#2#{}{C:inactive}, and {X:mult,C:white}X#3#{}{C:inactive})'
     }
   },
@@ -12,44 +12,44 @@ SMODS.Joker {
   config = { extra = { chips = 0, mult = 0, x_mult = 1 } },
   unlocked = true,
   discovered = true,
-  rarity = 4, -- Legendary
+  rarity = 3, -- Rare
   atlas = 'Sculio',
-  pos = { x = 8, y = 1 },
-  soul_pos = { x = 9, y = 1 },
-  cost = 20,
+  pos = { x = 3, y = 1 },
+  cost = 10,
   loc_vars = function(self, info_queue, card)
     return { vars = { card.ability.extra.chips, card.ability.extra.mult, card.ability.extra.x_mult } }
   end,
   calculate = function(self, card, context)
-    if context.individual and context.cardarea == G.play and not context.blueprint then
-      message = nil
+    if context.cardarea == G.jokers and context.selling_card and not context.blueprint then
+      sold_joker = context.card
 
-      if not context.other_card.debuff and context.other_card.edition then
-        if context.other_card.edition.type == 'foil' then
-          gain = 25
+      if not sold_joker.debuff and sold_joker.edition then
+        if sold_joker.edition.type == 'foil' then
+          gain = 50
           message = localize { type = 'variable', key = 'a_chips', vars = { gain } }
           card.ability.extra.chips = card.ability.extra.chips + gain
         end
 
-        if context.other_card.edition.type == 'holo' then
-          gain = 5
+        if sold_joker.edition.type == 'holo' then
+          gain = 10
           message = localize { type = 'variable', key = 'a_mult', vars = { gain } }
           card.ability.extra.mult = card.ability.extra.mult + gain
         end
 
-        if context.other_card.edition.type == 'polychrome' then
-          gain = 0.75
+        if sold_joker.edition.type == 'polychrome' then
+          gain = 1.5
           message = '+ ' .. localize { type = 'variable', key = 'a_xmult', vars = { gain } }
           card.ability.extra.x_mult = card.ability.extra.x_mult + gain
         end
       end
 
       if message then
-        return {
-          extra = {
-            message = message
-          }
-        }
+        G.E_MANAGER:add_event(Event({
+          func = function()
+            card_eval_status_text(card, 'extra', nil, nil, nil, { message = message })
+            return true
+          end
+        }))
       end
     end
 

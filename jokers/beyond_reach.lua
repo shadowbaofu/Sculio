@@ -3,9 +3,11 @@ SMODS.Joker {
   loc_txt = {
     name = 'Beyond Reach',
     text = {
-      'Permanently gain {C:blue}+#1#{} hand if',
-      'chips scored in the {C:attention}last hand{} of a Blind',
-      'is at least {C:attention}#2#%{} of required chips.'
+      'Prevents Death, {S:1.1,C:red,E:2}self destructs{}, and',
+      'permanently gains {C:blue}+#1#{} hand if chips',
+      'scored are at least {C:attention}#2#%{} of requirement.',
+      'No effect if the Blind is defeated',
+      ''
     }
   },
 
@@ -20,35 +22,23 @@ SMODS.Joker {
     return { vars = { card.ability.extra.hands_gain, card.ability.extra.required_score_percentage } }
   end,
   calculate = function(self, card, context)
-    if context.final_scoring_step then
+    if context.end_of_round and context.game_over and G.GAME.chips / G.GAME.blind.chips >= (card.ability.extra.required_score_percentage / 100) and not context.blueprint then
+      G.GAME.round_resets.hands = G.GAME.round_resets.hands + card.ability.extra.hands_gain
+
       G.E_MANAGER:add_event(Event({
         func = function()
-          card.ability.current_hand_chips = G.GAME.current_round.current_hand.chips
-          card.ability.current_hand_mult = G.GAME.current_round.current_hand.mult
-
+          G.hand_text_area.blind_chips:juice_up()
+          G.hand_text_area.game_chips:juice_up()
+          play_sound('tarot1')
+          card:start_dissolve()
           return true
         end
       }))
-    end
 
-    if context.end_of_round and not context.repetition and context.game_over == false and not context.blueprint and card.ability.current_hand_chips and card.ability.current_hand_mult then
-      local chips = card.ability.current_hand_chips
-      local mult = card.ability.current_hand_mult
-      local required_score = G.ARGS.score_intensity.required_score
-
-      if G.GAME.selected_back:get_name() == "Plasma Deck" then
-        local total = chips + mult
-        chips = math.floor(total / 2)
-        mult = math.floor(total / 2)
-      end
-
-      local score = chips * mult
-
-      if required_score > 0 and score >= (required_score * (card.ability.extra.required_score_percentage / 100)) then
-        G.GAME.round_resets.hands = G.GAME.round_resets.hands + 1
-
-        return { message = '+1 Hand' }
-      end
+      return {
+        message = '+1 Hand',
+        saved = true
+      }
     end
   end
 }

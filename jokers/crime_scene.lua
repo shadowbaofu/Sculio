@@ -22,6 +22,11 @@ SMODS.Joker {
     return { vars = { card.ability.extra.mult } }
   end,
   calculate = function(self, card, context)
+    if context.first_hand_drawn and not context.blueprint then
+      local eval = function() return G.GAME.current_round.hands_played == 0 end
+      juice_card_until(card, eval, true)
+    end
+
     if context.before and G.GAME.current_round.hands_played == 0 then
       if #context.full_hand == 1 then
         base_chips = context.full_hand[1]:get_id()

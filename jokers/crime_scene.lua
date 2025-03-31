@@ -3,8 +3,10 @@ SMODS.Joker {
   loc_txt = {
     name = 'Crime Scene',
     text = {
-      'If {C:attention}first hand{} of round has only {C:attention}1{} card,',
-      'this Joker\'s mult gains {C:attention}half{} of the {C:attention}card\'s base chips{}',
+      'If {C:attention}first hand{} of round',
+      'has only {C:attention}1{} card, this',
+      'Joker\'s mult gains {C:attention}half{}',
+      'of the {C:attention}card\'s base chips{}',
       '{C:inactive}(Currently {C:mult}+#1#{}{C:inactive})'
     }
   },
@@ -20,11 +22,6 @@ SMODS.Joker {
     return { vars = { card.ability.extra.mult } }
   end,
   calculate = function(self, card, context)
-    if context.first_hand_drawn and not context.blueprint then
-      local eval = function() return G.GAME.current_round.hands_played == 0 end
-      juice_card_until(card, eval, true)
-    end
-
     if context.before and G.GAME.current_round.hands_played == 0 then
       if #context.full_hand == 1 then
         base_chips = context.full_hand[1]:get_id()

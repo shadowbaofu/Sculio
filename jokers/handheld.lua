@@ -6,7 +6,6 @@ SMODS.Joker {
       'Scored {C:clubs}Clubs{} and {C:spades}Spades{} become',
       '{C:attention}Wild Cards{} if they are not',
       'already enhanced'
-      
     }
   },
 

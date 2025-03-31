@@ -67,7 +67,7 @@ SMODS.Joker {
 
             return true
           end
-        }))   
+        }))
 
         return { message = rarity_text .. '!' }
       end

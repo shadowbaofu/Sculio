@@ -37,7 +37,7 @@ SMODS.Joker {
         -- Based off of Hiker.
         context.other_card.ability.perma_bonus = context.other_card.ability.perma_bonus or 0
         context.other_card.ability.perma_bonus = context.other_card.ability.perma_bonus + perma_bonus_gain
-  
+
         return {
           extra = {message = localize('k_upgrade_ex'), colour = G.C.CHIPS},
           colour = G.C.CHIPS,

@@ -54,55 +54,11 @@ SMODS.Joker {
     end
 
     if context.joker_main then
-      message = ''
-      chip_mod = card.ability.extra.chips
-      mult_mod = card.ability.extra.mult
-      x_mult_mod = card.ability.extra.x_mult
-
-      if chip_mod > 0 or mult_mod > 0 or x_mult_mod > 1 then
-        if chip_mod > 1 then
-          message = localize { type = 'variable', key = 'a_chips', vars = { chip_mod } }
-        end
-
-        if mult_mod > 0 then
-          if chip_mod > 0 then
-            message = message .. ', '
-          end
-
-          message = message .. localize { type = 'variable', key = 'a_mult', vars = { mult_mod } }
-        end
-
-        if x_mult_mod > 1 then
-          if chip_mod > 0 or mult_mod > 0 then
-            message = message .. ', '
-          end
-
-          message = message .. localize { type = 'variable', key = 'a_xmult', vars = { x_mult_mod } }
-        end
-
-        if chip_mod == 0 then
-          chip_mod = nil
-        end
-
-        if mult_mod == 0 then
-          mult_mod = nil
-        end
-
-        if x_mult_mod == 1 then
-          x_mult_mod = nil
-        end
-
-        if message == '' then
-          message = nil
-        end
-
-        return {
-          chip_mod = chip_mod,
-          mult_mod = mult_mod,
-          Xmult_mod = x_mult_mod,
-          message = message
-        }
-      end
+      return {
+        chips = card.ability.extra.chips,
+        mult = card.ability.extra.mult,
+        Xmult = card.ability.extra.x_mult
+      }
     end
   end
 }

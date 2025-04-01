@@ -22,7 +22,7 @@ SMODS.Joker {
   calculate = function(self, card, context)
     if context.before and not context.blueprint then
       for k, v in ipairs(context.scoring_hand) do
-        if pseudorandom('pop_star') < G.GAME.probabilities.normal / card.ability.extra.odds then
+        if v.debuff == false and pseudorandom('pop_star') < G.GAME.probabilities.normal / card.ability.extra.odds then
           math.randomseed(pseudorandom('pop_star'))
           enhancement_index = math.random(1, #G.P_CENTER_POOLS['Enhanced'])
           enhancement = G.P_CENTER_POOLS['Enhanced'][enhancement_index]

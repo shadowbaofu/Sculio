@@ -4,12 +4,12 @@ SMODS.Joker {
     name = 'Figurine',
     text = {
       'When a Joker with an {C:attention}edition{} is sold,',
-      'this Joker gains the {C:attention}edition\'s bonus{}.',
+      'this Joker gains {C:attention}#4#X{} the {C:attention}edition\'s bonus{}.',
       '{C:inactive}(Currently {C:chips}+#1#{}{C:inactive}, {C:mult}+#2#{}{C:inactive}, and {X:mult,C:white}X#3#{}{C:inactive})'
     }
   },
 
-  config = { extra = { chips = 0, mult = 0, x_mult = 1 } },
+  config = { extra = { chips = 0, mult = 0, x_mult = 1, bonus_mult = 1 } },
   unlocked = true,
   discovered = true,
   rarity = 3, -- Rare
@@ -17,7 +17,7 @@ SMODS.Joker {
   pos = { x = 3, y = 1 },
   cost = 10,
   loc_vars = function(self, info_queue, card)
-    return { vars = { card.ability.extra.chips, card.ability.extra.mult, card.ability.extra.x_mult } }
+    return { vars = { card.ability.extra.chips, card.ability.extra.mult, card.ability.extra.x_mult, card.ability.extra.bonus_mult } }
   end,
   calculate = function(self, card, context)
     if context.cardarea == G.jokers and context.selling_card and not context.blueprint then
@@ -26,19 +26,19 @@ SMODS.Joker {
 
       if not sold_joker.debuff and sold_joker.edition then
         if sold_joker.edition.type == 'foil' then
-          gain = 50
+          gain = 50 * card.ability.extra.bonus_mult
           message = localize { type = 'variable', key = 'a_chips', vars = { gain } }
           card.ability.extra.chips = card.ability.extra.chips + gain
         end
 
         if sold_joker.edition.type == 'holo' then
-          gain = 10
+          gain = 10 * card.ability.extra.bonus_mult
           message = localize { type = 'variable', key = 'a_mult', vars = { gain } }
           card.ability.extra.mult = card.ability.extra.mult + gain
         end
 
         if sold_joker.edition.type == 'polychrome' then
-          gain = 1.5
+          gain = 1.5 * card.ability.extra.bonus_mult
           message = '+ ' .. localize { type = 'variable', key = 'a_xmult', vars = { gain } }
           card.ability.extra.x_mult = card.ability.extra.x_mult + gain
         end

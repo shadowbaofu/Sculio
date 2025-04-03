@@ -4,12 +4,12 @@ SMODS.Joker {
     name = 'Puck',
     text = {
       'When a card with an {C:attention}edition{} is scored,',
-      'this Joker gains {C:attention}half{} the {C:attention}edition\'s bonus{}.',
+      'this Joker gains {C:attention}#4#X{} the {C:attention}edition\'s bonus{}.',
       '{C:inactive}(Currently {C:chips}+#1#{}{C:inactive}, {C:mult}+#2#{}{C:inactive}, and {X:mult,C:white}X#3#{}{C:inactive})'
     }
   },
 
-  config = { extra = { chips = 0, mult = 0, x_mult = 1 } },
+  config = { extra = { chips = 0, mult = 0, x_mult = 1, bonus_mult = 1 } },
   unlocked = true,
   discovered = true,
   rarity = 4, -- Legendary
@@ -18,7 +18,7 @@ SMODS.Joker {
   soul_pos = { x = 9, y = 1 },
   cost = 20,
   loc_vars = function(self, info_queue, card)
-    return { vars = { card.ability.extra.chips, card.ability.extra.mult, card.ability.extra.x_mult } }
+    return { vars = { card.ability.extra.chips, card.ability.extra.mult, card.ability.extra.x_mult, card.ability.extra.bonus_mult } }
   end,
   calculate = function(self, card, context)
     if context.individual and context.cardarea == G.play and not context.blueprint then
@@ -26,19 +26,19 @@ SMODS.Joker {
 
       if not context.other_card.debuff and context.other_card.edition then
         if context.other_card.edition.type == 'foil' then
-          gain = 25
+          gain = 50 * card.ability.extra.bonus_mult
           message = localize { type = 'variable', key = 'a_chips', vars = { gain } }
           card.ability.extra.chips = card.ability.extra.chips + gain
         end
 
         if context.other_card.edition.type == 'holo' then
-          gain = 5
+          gain = 10 * card.ability.extra.bonus_mult
           message = localize { type = 'variable', key = 'a_mult', vars = { gain } }
           card.ability.extra.mult = card.ability.extra.mult + gain
         end
 
         if context.other_card.edition.type == 'polychrome' then
-          gain = 0.75
+          gain = 1.5 * card.ability.extra.bonus_mult
           message = '+ ' .. localize { type = 'variable', key = 'a_xmult', vars = { gain } }
           card.ability.extra.x_mult = card.ability.extra.x_mult + gain
         end
@@ -47,8 +47,9 @@ SMODS.Joker {
       if message then
         return {
           extra = {
-            message = message
-          }
+            message = message,
+            card = card
+          },
         }
       end
     end
@@ -57,7 +58,7 @@ SMODS.Joker {
       return {
         chips = card.ability.extra.chips,
         mult = card.ability.extra.mult,
-        Xmult = card.ability.extra.x_mult
+        Xmult = card.ability.extra.x_mult,
       }
     end
   end

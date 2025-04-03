@@ -9,7 +9,7 @@ SMODS.Joker {
     }
   },
 
-  config = { extra = { hand_count_mult = 3 } },
+  config = { extra = { hand_count_mult = 0.5 } },
   unlocked = true,
   discovered = true,
   rarity = 2, -- Uncommon

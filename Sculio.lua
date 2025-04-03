@@ -14,6 +14,13 @@ SMODS.Atlas {
 -- Load Jokers: https://github.com/neatoqueen/NeatoJokers/blob/main/NeatoJokers.lua#L32
 local subdir = 'jokers'
 local cards = NFS.getDirectoryItems(SMODS.current_mod.path .. subdir)
-for _, filename in pairs(cards) do
-    assert(SMODS.load_file(subdir .. '/' .. filename))()
+
+table.sort(cards, function(a, b)
+  local a_num = tonumber(a:match('^(%d+)_')) or 0
+  local b_num = tonumber(b:match('^(%d+)_')) or 0
+  return a_num < b_num
+end)
+
+for _, filename in ipairs(cards) do
+  assert(SMODS.load_file(subdir .. '/' .. filename))()
 end

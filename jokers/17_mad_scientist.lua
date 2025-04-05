@@ -30,17 +30,21 @@ SMODS.Joker {
         sliced_card.getting_sliced = true
         G.GAME.joker_buffer = G.GAME.joker_buffer - 1
 
-        rarity = sliced_card.config.center.rarity
+        rarity_index = sliced_card.config.center.rarity
         legendary = false
 
-        if rarity == 2 then
+        if rarity_index == 2 then
+          rarity = 0.71
           rarity_text = "Uncommon"
-        elseif rarity == 3 then
+        elseif rarity_index == 3 then
+          rarity = 0.96
           rarity_text = "Rare"
-        elseif rarity == 4 then
-          rarity_text = "Legendary"
+        elseif rarity_index == 4 then
+          rarity = nil
           legendary = true
+          rarity_text = "Legendary"
         else
+          rarity = 0
           rarity_text = "Common"
         end
 
@@ -59,7 +63,7 @@ SMODS.Joker {
 
         G.E_MANAGER:add_event(Event({
           func = function() 
-            local card = create_card('Joker', G.jokers, legendary, rarity - 1, nil, nil, nil, sliced_card.key)
+            local card = create_card('Joker', G.jokers, legendary, rarity, nil, nil, nil, sliced_card.key)
             card:add_to_deck()
             G.jokers:emplace(card)
             card:start_materialize()

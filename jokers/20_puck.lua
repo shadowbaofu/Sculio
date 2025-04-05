@@ -48,8 +48,9 @@ SMODS.Joker {
         return {
           extra = {
             message = message,
-            card = card
+            focus = card
           },
+          card = card
         }
       end
     end

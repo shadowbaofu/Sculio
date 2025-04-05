@@ -5,7 +5,7 @@ SMODS.Joker {
     text = {
       'Prevents Death, {S:1.1,C:red,E:2}self destructs{}, and',
       'permanently gains {C:blue}+#1#{} hand if chips',
-      'scored are at least {C:attention}#2#%{} of requirement.',
+      'scored are at least {C:attention}#2#%{} of requirement',
       'No effect if the Blind is defeated',
       ''
     }

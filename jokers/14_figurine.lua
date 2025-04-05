@@ -4,7 +4,7 @@ SMODS.Joker {
     name = 'Figurine',
     text = {
       'When a Joker with an {C:attention}edition{} is sold,',
-      'this Joker gains {C:attention}#4#X{} the {C:attention}edition\'s bonus{}.',
+      'this Joker gains {C:attention}#4#X{} the {C:attention}edition\'s bonus{}',
       '{C:inactive}(Currently {C:chips}+#1#{}{C:inactive}, {C:mult}+#2#{}{C:inactive}, and {X:mult,C:white}X#3#{}{C:inactive})'
     }
   },

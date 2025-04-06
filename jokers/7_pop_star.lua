@@ -5,7 +5,8 @@ SMODS.Joker {
     text = {
       '{C:green}#1# in #2#{} chance',
       'for {C:attention}each scored card{}',
-      'to become {C:attention}enhanced{}'
+      'to gain a {C:attention}new{},',
+      '{C:attention}random enhancement{}'
     }
   },
 

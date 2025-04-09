@@ -35,24 +35,24 @@ SMODS.Joker {
 
         if rarity_index == 2 then
           rarity = 0.71
-          rarity_text = "Uncommon"
+          rarity_text = 'Uncommon'
         elseif rarity_index == 3 then
           rarity = 0.96
-          rarity_text = "Rare"
+          rarity_text = 'Rare'
         elseif rarity_index == 4 then
           rarity = nil
           legendary = true
-          rarity_text = "Legendary"
+          rarity_text = 'Legendary'
         else
           rarity = 0
-          rarity_text = "Common"
+          rarity_text = 'Common'
         end
 
         G.E_MANAGER:add_event(Event({
           func = function()
             G.GAME.joker_buffer = 0
             card:juice_up(0.8, 0.8)
-            sliced_card:start_dissolve({HEX("57ecab")}, nil, 1.6)
+            sliced_card:start_dissolve({HEX('57ecab')}, nil, 1.6)
             play_sound('tarot1')
             return true 
           end

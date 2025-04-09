@@ -3,9 +3,9 @@ SMODS.Joker {
   loc_txt = {
     name = 'Joker Cutout',
     text = {
-      "{X:red,C:white} X#1# {} Mult for each",
-      "{C:attention}other{} occupied {C:attention}Joker{} slot",
-      "{C:inactive}(Currently {X:red,C:white} X#2# {C:inactive})",
+      '{X:red,C:white} X#1# {} Mult for each',
+      '{C:attention}other{} occupied {C:attention}Joker{} slot',
+      '{C:inactive}(Currently {X:red,C:white} X#2# {C:inactive})',
     }
   },
 

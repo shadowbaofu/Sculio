@@ -3,8 +3,8 @@ SMODS.Joker {
   loc_txt = {
     name = 'Crooked Joker',
     text = {
-      "{C:attention}+#1#{} hand size,",
-      "steals {C:money}$#2#{} every round.",
+      '{C:attention}+#1#{} hand size,',
+      'steals {C:money}$#2#{} every round.',
       'Destroyed if money reaches {C:money}$#3#{}',
     }
   },

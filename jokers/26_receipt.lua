@@ -3,9 +3,9 @@ SMODS.Joker {
   loc_txt = {
     name = 'Receipt',
     text = {
-      "Sell this card to",
-      "create a free",
-      "{C:attention}Voucher Tag{}"
+      'Sell this card to',
+      'create a free',
+      '{C:attention}Voucher Tag{}'
     }
   },
 

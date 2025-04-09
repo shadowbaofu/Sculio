@@ -18,7 +18,7 @@ SMODS.Joker {
   pos = { x = 6, y = 0 },
   cost = 8,
   loc_vars = function(self, info_queue, card)
-    return { vars = { (G.GAME.probabilities.normal or 1), card.ability.extra.odds, card.ability.extra.x_mult } }
+    return { vars = { (G.GAME.probabilities.normal or 1), card.ability.extra.odds } }
   end,
   calculate = function(self, card, context)
     if context.before and not context.blueprint then

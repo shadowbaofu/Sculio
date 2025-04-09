@@ -19,7 +19,7 @@ SMODS.Joker {
     if context.before and not context.blueprint then
       -- Based off of Vampire.
       for k, v in ipairs(context.scoring_hand) do
-        if v.debuff == false and (v:is_suit('Clubs') or v:is_suit('Spades')) and v.config.center == G.P_CENTERS.c_base and not v.debuff and not v.vampired then 
+        if v.debuff == false and (v:is_suit('Clubs') or v:is_suit('Spades')) and v.config.center == G.P_CENTERS.c_base and not v.debuff and not v.vampired then
           v:set_ability(G.P_CENTERS.m_wild, nil, true)
 
           G.E_MANAGER:add_event(Event({

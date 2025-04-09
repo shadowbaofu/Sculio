@@ -25,7 +25,7 @@ SMODS.Joker {
         if G.jokers.cards[i] == card then my_pos = i; break end
       end
 
-      if my_pos and G.jokers.cards[my_pos + 1] and not card.getting_sliced and not G.jokers.cards[my_pos + 1].ability.eternal and not G.jokers.cards[my_pos + 1].getting_sliced then 
+      if my_pos and G.jokers.cards[my_pos + 1] and not card.getting_sliced and not G.jokers.cards[my_pos + 1].ability.eternal and not G.jokers.cards[my_pos + 1].getting_sliced then
         local sliced_card = G.jokers.cards[my_pos + 1]
         sliced_card.getting_sliced = true
         G.GAME.joker_buffer = G.GAME.joker_buffer - 1
@@ -54,7 +54,7 @@ SMODS.Joker {
             card:juice_up(0.8, 0.8)
             sliced_card:start_dissolve({HEX('57ecab')}, nil, 1.6)
             play_sound('tarot1')
-            return true 
+            return true
           end
         }))
 
@@ -62,7 +62,7 @@ SMODS.Joker {
         G.GAME.joker_buffer = G.GAME.joker_buffer + 1
 
         G.E_MANAGER:add_event(Event({
-          func = function() 
+          func = function()
             local card = create_card('Joker', G.jokers, legendary, rarity, nil, nil, nil, sliced_card.key)
             card:add_to_deck()
             G.jokers:emplace(card)

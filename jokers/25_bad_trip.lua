@@ -26,7 +26,7 @@ SMODS.Joker {
     if context.end_of_round and not context.repetition and context.game_over == false and not context.blueprint then
       card.ability.extra.rounds_elapsed = card.ability.extra.rounds_elapsed + 1
 
-      if card.ability.extra.rounds_elapsed >= card.ability.extra.rounds_until_active then 
+      if card.ability.extra.rounds_elapsed >= card.ability.extra.rounds_until_active then
         local eval = function(card) return not card.REMOVED end
         juice_card_until(card, eval, true)
       end

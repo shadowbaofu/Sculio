@@ -57,7 +57,7 @@ SMODS.Joker {
         card.ability.extra.mult = card.ability.extra.mult + card.ability.extra.mult_add_open
 
         G.E_MANAGER:add_event(Event({
-          func = function() 
+          func = function()
             card_eval_status_text(card, 'extra', nil, nil, nil, {
               message = localize { type = 'variable', key = 'a_mult', vars = { card.ability.extra.mult_add_open } },
               colour = G.C.RED,

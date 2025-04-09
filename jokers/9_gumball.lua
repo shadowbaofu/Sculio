@@ -6,7 +6,7 @@ SMODS.Joker {
       'Adds {C:mult}#2#{} Mult when a booster pack is opened',
       '{C:mult}#3#{} Mult when a booster pack is skipped',
       'Destroyed if Mult reaches {C:mult}#4#{} Mult',
-      '{C:inactive}(Currently {C:mult}#1#{}{C:inactive})'
+      '{C:inactive}(Currently {C:mult}+#1# Mult{}{C:inactive})'
     }
   },
 

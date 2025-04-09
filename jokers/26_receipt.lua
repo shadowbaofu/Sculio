@@ -24,7 +24,7 @@ SMODS.Joker {
           play_sound('holo1', 1.2 + math.random()*0.1, 0.4)
           return true
         end)
-    }))
+      }))
     end
   end
 }

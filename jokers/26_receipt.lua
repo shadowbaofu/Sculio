@@ -15,6 +15,7 @@ SMODS.Joker {
   atlas = 'Sculio',
   pos = { x = 7, y = 2 },
   cost = 8,
+  eternal_compat = false,
   calculate = function(self, card, context)
     if context.selling_self then
       G.E_MANAGER:add_event(Event({

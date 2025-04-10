@@ -4,7 +4,7 @@ SMODS.Joker {
     name = 'Intuition',
     text = {
       'Scored {C:attention}Gold Cards{} give {C:money}$#1#{}.',
-      'Scored {C:attention}Steel Cards{} give {X:mult,C:white}X#2#{}'
+      'Scored {C:attention}Steel Cards{} give {X:mult,C:white}X#2#{} Mult'
     }
   },
 
@@ -19,7 +19,7 @@ SMODS.Joker {
     return { vars = { card.ability.extra.gold_dollar_bonus, card.ability.extra.steel_x_mult_bonus } }
   end,
   calculate = function(self, card, context)
-    if context.individual and context.cardarea == G.play and not context.blueprint then
+    if context.individual and context.cardarea == G.play then
       message = nil
 
       if not context.other_card.debuff then

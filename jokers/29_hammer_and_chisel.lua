@@ -25,7 +25,7 @@ SMODS.Joker {
       card.ability.cards_to_shatter = {}
     end
 
-    if context.individual and context.cardarea == G.play and not context.blueprint then
+    if context.individual and context.cardarea == G.play then
       message = nil
 
       if not context.other_card.debuff and context.other_card.config.center == G.P_CENTERS.m_stone then

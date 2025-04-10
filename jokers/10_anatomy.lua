@@ -3,7 +3,7 @@ SMODS.Joker {
   loc_txt = {
     name = 'Anatomy',
     text = {
-      'Scored number cards have',
+      'Scored {C:attention}number cards{} have',
       '{C:green}#1#X their rank out of #2#{}',
       'to be retriggered once'
     }

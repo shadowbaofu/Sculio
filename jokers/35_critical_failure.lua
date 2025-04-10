@@ -5,8 +5,8 @@ SMODS.Joker {
     text = {
       'This Joker gains {X:mult,C:white} X#2# {} Mult',
       'every time a {C:attention}Lucky{} card',
-      '{C:red}fails{} to trigger, resets when',
-      'a {C:attention}Lucky{} card {C:green}successfully{} triggers',
+      '{C:red}fails{} to trigger, resets when a',
+      '{C:attention}Lucky{} card {C:green}successfully{} triggers',
       '{C:inactive}(Currently {X:mult,C:white} X#1# {C:inactive} Mult)',
     }
   },

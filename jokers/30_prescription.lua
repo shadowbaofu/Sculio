@@ -19,7 +19,7 @@ SMODS.Joker {
   rarity = 2, -- Uncommon
   atlas = 'Sculio',
   pos = { x = 1, y = 3 },
-  cost = 8,
+  cost = 5,
   eternal_compat = false,
   loc_vars = function(self, info_queue, card)
     return { vars = { card.ability.extra.rounds_until_active, card.ability.extra.rounds_elapsed } }

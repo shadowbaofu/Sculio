@@ -7,7 +7,7 @@ SMODS.Joker {
       'every time a {C:attention}Lucky{} card',
       '{C:red}fails{} to trigger, resets when a',
       '{C:attention}Lucky{} card {C:green}successfully{} triggers',
-      '{C:inactive}(Currently {X:mult,C:white} X#1# {C:inactive} Mult)',
+      '{C:inactive}(Currently {X:mult,C:white} X#1# {C:inactive} Mult)'
     }
   },
 

@@ -25,20 +25,16 @@ SMODS.Joker {
       card.ability.cards_to_shatter = {}
     end
 
-    if context.individual and context.cardarea == G.play then
-      message = nil
-
-      if not context.other_card.debuff and context.other_card.config.center == G.P_CENTERS.m_stone then
-        if pseudorandom('hammer_and_chisel') < G.GAME.probabilities.normal / card.ability.extra.shatter_odds then
-          table.insert(card.ability.cards_to_shatter, context.other_card)
-        end
-
-        return {
-          chips = card.ability.extra.chip_bonus,
-          mult = card.ability.extra.mult_bonus,
-          card = card
-        }
+    if context.individual and context.cardarea == G.play and context.other_card.debuff and context.other_card.config.center == G.P_CENTERS.m_stone then
+      if pseudorandom('hammer_and_chisel') < G.GAME.probabilities.normal / card.ability.extra.shatter_odds then
+        table.insert(card.ability.cards_to_shatter, context.other_card)
       end
+
+      return {
+        chips = card.ability.extra.chip_bonus,
+        mult = card.ability.extra.mult_bonus,
+        card = card
+      }
     end
 
     if context.after then

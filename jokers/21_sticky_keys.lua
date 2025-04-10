@@ -7,7 +7,7 @@ SMODS.Joker {
       'of {C:attention}first scoring card{}',
       'every {C:attention}#2#{} hands played',
       '{C:inactive}#3# hand#4# remaining{}',
-      '{C:inactive}(Currently {C:mult}+#1# Mult{}{C:inactive})',
+      '{C:inactive}(Currently {C:mult}+#1#{}{C:inactive} Mult)',
     }
   },
 

@@ -6,7 +6,7 @@ SMODS.Joker {
       'For every {C:money}$#4#{} {C:inactive}[$#5#]{} spent',
       'in shop, earn {C:money}$#1#{}',
       'and {C:mult}+#3# Mult{}',
-      '{C:inactive}(Currently {C:mult}+#2# Mult{}{C:inactive})'
+      '{C:inactive}(Currently {C:mult}+#2#{}{C:inactive} Mult)'
     }
   },
 

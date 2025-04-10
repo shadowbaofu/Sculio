@@ -5,8 +5,8 @@ SMODS.Joker {
     text = {
       'If you play your most played hand,',
       'each scored {C:attention}card{} permanently gains',
-      '{C:chips}chips{} equal to {C:attention}#1#X the number of times',
-      'it has been played{}'
+      '{C:chips}chips{} equal to {C:attention}#1#X the number{}',
+      '{C:attention}of times it has been played{}'
     }
   },
 

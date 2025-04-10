@@ -6,7 +6,7 @@ SMODS.Joker {
       'This Joker gains between {C:mult}#3#{}',
       'and {C:mult}#2#{} Mult per hand played',
       'Destroyed if Mult reaches {C:mult}#4#{} Mult',
-      '{C:inactive}(Currently {C:mult}+#1# Mult{}{C:inactive})'
+      '{C:inactive}(Currently {C:mult}#1#{}{C:inactive} Mult)'
     }
   },
 

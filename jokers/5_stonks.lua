@@ -5,7 +5,7 @@ SMODS.Joker {
     text = {
       'The {C:mult}+Mult{} for this Joker',
       '{C:attention}doubles{} after every boss blind',
-      '{C:inactive}(Currently {C:mult}+#1#{}{C:inactive})'
+      '{C:inactive}(Currently {C:mult}+#1#{}{C:inactive} Mult)'
     }
   },
 

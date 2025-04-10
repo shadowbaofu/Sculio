@@ -7,7 +7,7 @@ SMODS.Joker {
       'has only {C:attention}1{} card, this',
       'Joker\'s mult gains {C:attention}half{}',
       'of the {C:attention}card\'s base chips{}',
-      '{C:inactive}(Currently {C:mult}+#1#{}{C:inactive})'
+      '{C:inactive}(Currently {C:mult}+#1#{}{C:inactive} Mult)'
     }
   },
 

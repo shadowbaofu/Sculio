@@ -5,7 +5,7 @@ SMODS.Joker {
     text = {
       '{X:red,C:white} X#1# {} Mult for each',
       '{C:attention}other{} occupied {C:attention}Joker{} slot',
-      '{C:inactive}(Currently {X:red,C:white} X#2# {C:inactive})',
+      '{C:inactive}(Currently {X:red,C:white} X#2# {C:inactive} Mult)',
     }
   },
 

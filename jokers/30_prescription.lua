@@ -8,7 +8,7 @@ SMODS.Joker {
       'all {C:attention}Eternal{}, {C:attention}Perishable{}',
       'and {C:attention}Rental{} stickers',
       'from all owned {C:attention}Jokers{}.',
-      'Rebuffs {C:attention}debuffed Jokers{}',
+      'Rebuffs {C:attention}perished Jokers{}',
       '{C:inactive}(Currently {C:attention}#2#{C:inactive} / #1#)'
     }
   },
@@ -21,6 +21,9 @@ SMODS.Joker {
   pos = { x = 1, y = 3 },
   cost = 5,
   eternal_compat = false,
+  in_pool = function (self, args)
+    return G.GAME.stake >= 4 -- Black Stake
+  end,
   loc_vars = function(self, info_queue, card)
     return { vars = { card.ability.extra.rounds_until_active, card.ability.extra.rounds_elapsed } }
   end,
@@ -42,10 +45,15 @@ SMODS.Joker {
 
     if context.selling_self and card.ability.extra.rounds_elapsed >= card.ability.extra.rounds_until_active then
       for k, v in ipairs(G.jokers.cards) do
+        is_perishable = v.ability.perishable
+
         v:set_eternal(false)
         v.ability.perishable = false
         v:set_rental(false)
-        v:set_debuff(false)
+
+        if is_perishable then
+          v:set_debuff(false)
+        end
       end
     end
   end

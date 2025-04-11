@@ -13,7 +13,7 @@ SMODS.Joker {
   config = { is_coupon = true, extra = { x_mult = 1, dollar_steal = 1, x_mult_scale = 0.1, dollar_scale = 1 } },
   unlocked = true,
   discovered = true,
-  rarity = 3, -- Rare
+  rarity = 2, -- Uncommon
   atlas = 'Sculio',
   pos = { x = 7, y = 1 },
   cost = 10,

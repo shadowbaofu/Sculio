@@ -7,7 +7,7 @@ function CardArea:shuffle(_seed)
   is_verified = false
 
   for i = 1, #G.jokers.cards do
-    if G.jokers.cards[i] and G.jokers.cards[i].ability and G.jokers.cards[i].ability.is_verified then is_verified = true; break end
+    if G.jokers.cards[i] and G.jokers.cards[i].ability.name == 'j_Sculio_verified' then is_verified = true; break end
   end
 
   if self == G.deck and is_verified then
@@ -43,7 +43,7 @@ SMODS.Joker {
     }
   },
 
-  config = { is_verified = true, extra = { x_mult = 1, x_mult_gain = 0.25 } },
+  config = { extra = { x_mult = 1, x_mult_gain = 0.25 } },
   unlocked = true,
   discovered = true,
   rarity = 2, -- Uncommon

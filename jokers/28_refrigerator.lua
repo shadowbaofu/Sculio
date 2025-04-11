@@ -3,16 +3,16 @@ SMODS.Joker {
   loc_txt = {
     name = 'Refrigerator',
     text = {
-      '{C:attention}Ice Cream{}, {C:attention}Seltzer{}, {C:attention}Ramen{},',
-      '{C:attention}Popcorn{}, and {C:attention}Turtle Bean{}',
-      'Jokers placed {C:attention}after{} this Joker',
+      'All {C:attention}Ice Cream{}, {C:attention}Seltzer{}, {C:attention}Ramen{},',
+      '{C:attention}Popcorn{}, and {C:attention}Turtle Bean{} Jokers',
+      'placed {C:attention}to the right of this Joker{}',
       'do not {C:attention}lose potency{} or {C:attention}expire{}'
     }
   },
 
   unlocked = true,
   discovered = true,
-  rarity = 2, -- Uncommon
+  rarity = 1, -- Common
   atlas = 'Sculio',
   pos = { x = 9, y = 2 },
   cost = 6,

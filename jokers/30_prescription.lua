@@ -5,10 +5,10 @@ SMODS.Joker {
     text = {
       'After {C:attention}#1#{} rounds,',
       'sell this card to {C:attention}remove{}',
-      'all {C:attention}Eternal{}, {C:attention}Perishable{}',
-      'and {C:attention}Rental{} stickers',
-      'from all owned {C:attention}Jokers{}.',
-      'Rebuffs {C:attention}perished Jokers{}',
+      'all {C:attention}Eternal{} / {C:attention}Perishable{}',
+      '/ {C:attention}Rental{} stickers from',
+      'all {C:attention}owned Jokers{} and',
+      '{C:attention}rebuff perished Jokers{}',
       '{C:inactive}(Currently {C:attention}#2#{C:inactive} / #1#)'
     }
   },

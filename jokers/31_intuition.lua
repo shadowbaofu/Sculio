@@ -24,10 +24,11 @@ SMODS.Joker {
 
       if not context.other_card.debuff then
         if context.other_card.config.center == G.P_CENTERS.m_gold then
-          ease_dollars(card.ability.extra.gold_dollar_bonus)
-        end
-
-        if context.other_card.config.center == G.P_CENTERS.m_steel then
+          return {
+            dollars = card.ability.extra.gold_dollar_bonus,
+            card = card
+          }
+        elseif context.other_card.config.center == G.P_CENTERS.m_steel then
           return {
             x_mult = card.ability.extra.steel_x_mult_bonus,
             card = card

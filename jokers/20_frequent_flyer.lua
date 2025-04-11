@@ -21,15 +21,27 @@ SMODS.Joker {
     return { vars = { card.ability.extra.money_gain, card.ability.extra.mult, card.ability.extra.mult_gain, card.ability.extra.spend_per_gain, card.ability.extra.spent_since_gain } }
   end,
   calculate = function(self, card, context)
-    if (context.buying_card or context.open_booster) and not context.blueprint then
-      card.ability.extra.spent_since_gain = card.ability.extra.spent_since_gain + context.card.cost
+    rerolls_were_free = rerolls_are_free or G.GAME.current_round.reroll_cost == 0
+
+    if (context.buying_card or context.open_booster or context.reroll_shop) and not context.blueprint then
+      if context.buying_card or context.open_booster then
+        card.ability.extra.spent_since_gain = card.ability.extra.spent_since_gain + context.card.cost
+      elseif context.reroll_shop then
+        if not rerolls_were_free then
+          card.ability.extra.spent_since_gain = card.ability.extra.spent_since_gain + G.GAME.current_round.reroll_cost - 1
+        else
+          rerolls_were_free = false
+        end
+      end
 
       if card.ability.extra.spent_since_gain >= card.ability.extra.spend_per_gain then
-        ease_dollars(card.ability.extra.money_gain)
         card.ability.extra.mult = card.ability.extra.mult + card.ability.extra.mult_gain
         card.ability.extra.spent_since_gain = card.ability.extra.spent_since_gain - card.ability.extra.spend_per_gain
 
-        return { message = '$' .. card.ability.extra.money_gain .. ' & ' .. localize('k_upgrade_ex') }
+        return {
+          dollars = card.ability.extra.money_gain,
+          message = localize('k_upgrade_ex')
+        }
       end
     end
 

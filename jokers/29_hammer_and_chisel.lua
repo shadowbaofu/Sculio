@@ -18,6 +18,7 @@ SMODS.Joker {
   pos = { x = 0, y = 3 },
   cost = 7,
   loc_vars = function(self, info_queue, card)
+    info_queue[#info_queue+1] = G.P_CENTERS.m_stone
     return { vars = { (G.GAME.probabilities.normal or 1), card.ability.extra.shatter_odds, card.ability.extra.chip_bonus, card.ability.extra.mult_bonus } }
   end,
   calculate = function(self, card, context)

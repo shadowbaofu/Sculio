@@ -14,6 +14,10 @@ SMODS.Joker {
   atlas = 'Sculio',
   pos = { x = 5, y = 0 },
   cost = 7,
+  loc_vars = function(self, info_queue, card)
+    info_queue[#info_queue+1] = G.P_CENTERS.m_stone
+    info_queue[#info_queue+1] = G.P_SEALS.Gold
+  end,
   calculate = function(self, card, context)
     if context.before and not context.blueprint then
       -- Based off of Vampire.

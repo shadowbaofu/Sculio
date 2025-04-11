@@ -18,6 +18,8 @@ SMODS.Joker {
   pos = { x = 4, y = 2 },
   cost = 7,
   loc_vars = function(self, info_queue, card)
+    info_queue[#info_queue+1] = G.P_CENTERS.e_negative
+    info_queue[#info_queue+1] = G.P_CENTERS.c_black_hole
     return { vars = { card.ability.extra.black_holes_per_cycle, card.ability.extra.boss_blinds_per_cycle, card.ability.extra.boss_blinds_per_cycle - card.ability.extra.boss_blinds_since_last_cycle } }
   end,
   calculate = function(self, card, context)

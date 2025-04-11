@@ -19,5 +19,21 @@ return {
         }
       }
     },
+    Other = {
+      Sculio_refrigeratable_food_jokers = {
+        name = 'Refrigeratable Food Jokers',
+        text = {
+          '{C:attention}Ice Cream{}, {C:attention}Seltzer{}, {C:attention}Ramen{},',
+          '{C:attention}Popcorn{}, and {C:attention}Turtle Bean{}'
+        }
+      },
+      Sculio_ailments = {
+        name = 'Ailments',
+        text = {
+          '{C:attention}Eternal{} and {C:attention}Perishable{},',
+          'and {C:attention}Rental{} stickers'
+        }
+      }
+    }
   }
 }

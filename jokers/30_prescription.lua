@@ -5,9 +5,8 @@ SMODS.Joker {
     text = {
       'After {C:attention}#1#{} rounds,',
       'sell this card to {C:attention}remove{}',
-      'all {C:attention}Eternal{} / {C:attention}Perishable{}',
-      '/ {C:attention}Rental{} stickers from',
-      'all {C:attention}owned Jokers{} and',
+      'all {C:attention}Ailments{} from all',
+      '{C:attention}owned Jokers{} and',
       '{C:attention}rebuff perished Jokers{}',
       '{C:inactive}(Currently {C:attention}#2#{C:inactive} / #1#)'
     }
@@ -25,6 +24,7 @@ SMODS.Joker {
     return G.GAME.stake >= 4 -- Black Stake
   end,
   loc_vars = function(self, info_queue, card)
+    info_queue[#info_queue+1] = { key = 'Sculio_ailments', set = 'Other' }
     return { vars = { card.ability.extra.rounds_until_active, card.ability.extra.rounds_elapsed } }
   end,
   calculate = function(self, card, context)

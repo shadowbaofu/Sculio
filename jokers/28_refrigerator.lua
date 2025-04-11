@@ -3,8 +3,7 @@ SMODS.Joker {
   loc_txt = {
     name = 'Refrigerator',
     text = {
-      'All {C:attention}Ice Cream{}, {C:attention}Seltzer{}, {C:attention}Ramen{},',
-      '{C:attention}Popcorn{}, and {C:attention}Turtle Bean{} Jokers',
+      '{C:attention}Refrigeratable Food Jokers{}',
       'placed {C:attention}to the right of this Joker{}',
       'do not {C:attention}lose potency{} or {C:attention}expire{}'
     }
@@ -16,6 +15,9 @@ SMODS.Joker {
   atlas = 'Sculio',
   pos = { x = 9, y = 2 },
   cost = 6,
+  loc_vars = function(self, info_queue, card)
+    info_queue[#info_queue+1] = { key = 'Sculio_refrigeratable_food_jokers', set = 'Other' }
+  end,
   juice_two = function(self, card, other_joker)
     G.E_MANAGER:add_event(Event({
       func = function()

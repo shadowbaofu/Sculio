@@ -30,3 +30,5 @@ end)
 for _, filename in ipairs(cards) do
   assert(SMODS.load_file(subdir .. '/' .. filename))()
 end
+
+assert(SMODS.load_file('shuffle.lua'))()

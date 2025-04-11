@@ -33,7 +33,7 @@ SMODS.Joker {
       card.ability.extra.hands_elapsed = card.ability.extra.hands_elapsed + 1
 
       if card.ability.extra.hands_elapsed >= card.ability.extra.hands_until_change then
-        base_chips = context.full_hand[1]:get_id()
+        base_chips = context.full_hand[1].base.id
 
         if base_chips > 10 then
           if base_chips == 14 then

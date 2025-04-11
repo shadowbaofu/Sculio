@@ -11,6 +11,12 @@ SMODS.Atlas {
   py = 95
 }
 
+SMODS.current_mod.optional_features = function()
+  return {
+    post_trigger = true
+  }
+end
+
 -- Load Jokers: https://github.com/neatoqueen/NeatoJokers/blob/main/NeatoJokers.lua#L32
 local subdir = 'jokers'
 local cards = NFS.getDirectoryItems(SMODS.current_mod.path .. subdir)

@@ -10,7 +10,7 @@ SMODS.Joker {
     }
   },
 
-  config = { initialized = false, extra = { x_mult = 1, x_mult_gain = 0.25 } },
+  config = { extra = { x_mult = 1, x_mult_gain = 0.25 } },
   unlocked = true,
   discovered = true,
   rarity = 2, -- Uncommon
@@ -21,15 +21,12 @@ SMODS.Joker {
   loc_vars = function(self, info_queue, card)
     return { vars = { card.ability.extra.x_mult, card.ability.extra.x_mult_gain } }
   end,
+  add_to_deck = function(self, card, from_debuff)
+    -- Set sell cost to $0.
+    card.ability.extra_value = (card.ability.extra_value or 0) - card.sell_cost
+    card:set_cost()
+  end,
   calculate = function(self, card, context)
-    if not card.initialized then
-      -- Set sell cost to $0.
-      card.ability.extra_value = (card.ability.extra_value or 0) - card.sell_cost
-      card:set_cost()
-
-      initialized = true
-    end
-
     if context.joker_main and card.ability.extra.x_mult > 1 then
       return {
         Xmult_mod = card.ability.extra.x_mult,

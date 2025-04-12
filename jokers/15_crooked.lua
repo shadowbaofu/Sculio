@@ -19,9 +19,12 @@ SMODS.Joker {
   loc_vars = function(self, info_queue, card)
     return { vars = { card.ability.extra.hand_size_bonus, card.ability.extra.steal, card.ability.extra.money_min } }
   end,
-	add_to_deck = function(self, card, from_debuff)
-		G.hand:change_size(card.ability.extra.hand_size_bonus)
-	end,
+  add_to_deck = function(self, card, from_debuff)
+    G.hand:change_size(card.ability.extra.hand_size_bonus)
+  end,
+  remove_from_deck = function(self, card, from_debuff)
+    G.hand:change_size(-card.ability.extra.hand_size_bonus)
+  end,
   calculate = function(self, card, context)
     if context.end_of_round and not context.repetition and context.game_over == false and not context.blueprint then
       ease_dollars(-card.ability.extra.steal)

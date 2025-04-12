@@ -14,14 +14,14 @@ end
 function CardArea:shuffle(_seed)
   local g = old_shuffle(self, _seed)
 
-  rorshach = nil
+  rorschach = nil
   verified_user = nil
 
   for i = 1, #G.jokers.cards do
     joker = G.jokers.cards[i]
 
-    if joker and joker.ability.name == 'j_Sculio_rorshach' and #joker.ability.extra.card_ids_to_draw_next >= 1 then
-      rorshach = joker
+    if joker and joker.ability.name == 'j_Sculio_rorschach' and #joker.ability.extra.card_ids_to_draw_next >= 1 then
+      rorschach = joker
     end
 
     if joker and joker.ability.name == 'j_Sculio_verified' then
@@ -29,9 +29,9 @@ function CardArea:shuffle(_seed)
     end
   end
 
-  if self == G.deck and (rorshach or verified_user) then
+  if self == G.deck and (rorschach or verified_user) then
     -- Later prioritizations override earlier ones.
-    -- Rorshach should take priority over Verified User.
+    -- rorschach should take priority over Verified User.
     -- Therefore, we handle the Verified User logic first.
     if verified_user then
       local priorities = {}
@@ -52,12 +52,12 @@ function CardArea:shuffle(_seed)
       self.cards = others
     end
 
-    if rorshach then
+    if rorschach then
       local priorities = {}
       local others = {}
 
       for _, v in pairs(self.cards) do
-        if contains(rorshach.ability.extra.card_ids_to_draw_next, v.ID) then
+        if contains(rorschach.ability.extra.card_ids_to_draw_next, v.ID) then
           table.insert(priorities, v)
         else
           table.insert(others, v)
@@ -69,7 +69,7 @@ function CardArea:shuffle(_seed)
       end
   
       self.cards = others
-      rorshach.ability.extra.cards_to_draw_next = {}
+      rorschach.ability.extra.cards_to_draw_next = {}
     end
 
     self:set_ranks()

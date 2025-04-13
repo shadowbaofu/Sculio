@@ -3,24 +3,43 @@ SMODS.Joker {
   loc_txt = {
     name = 'Scheming Idol',
     text = {
-      'Copies ability of all',
-      '{C:attention}Common Jokers{}'
+      'Copies ability of a',
+      '{C:attention}random Joker{}'
     }
   },
 
   unlocked = true,
   discovered = true,
-  rarity = 3, -- Rare
+  rarity = 2, -- Uncommon
   atlas = 'Sculio',
   pos = { x = 5, y = 2 },
-  cost = 10,
+  cost = 8,
   blueprint_compat = true,
   calculate = function(self, card, context)
-    if context.post_trigger and context.other_card.config.center.rarity == 1 then
-      return_val = SMODS.blueprint_effect(card, context.other_card, context.other_context)
-      return_val.message_card = card
+    if context.before then
+      other_jokers = {}
 
-      return return_val
+      for i = 1, #G.jokers.cards do
+        this_joker = G.jokers.cards[i]
+
+        if this_joker ~= card then
+          table.insert(other_jokers, this_joker)
+        end
+      end
+
+      if #other_jokers > 0 and not random_joker then
+        math.randomseed(pseudorandom('scheming_idol'))
+        random_joker = other_jokers[math.random(1, #other_jokers)]
+      end
+    end
+
+    if context.after then
+      random_joker = nil
+    end
+
+    if random_joker then
+      random_joker_ret = SMODS.blueprint_effect(card, random_joker, context)
+      return random_joker_ret
     end
   end
 }

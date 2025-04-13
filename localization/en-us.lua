@@ -20,8 +20,8 @@ return {
       }
     },
     Other = {
-      Sculio_refrigerable_food_jokers = {
-        name = 'Refrigerable Food Jokers',
+      Sculio_refrigerable_jokers = {
+        name = 'Refrigerable Jokers',
         text = {
           '{C:attention}Ice Cream{}, {C:attention}Seltzer{}, {C:attention}Ramen{},',
           '{C:attention}Popcorn{}, and {C:attention}Turtle Bean{}'

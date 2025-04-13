@@ -17,12 +17,7 @@ SMODS.Joker {
   calculate = function(self, card, context)
     if context.post_trigger and context.other_card.config.center.rarity == 1 then
       return_val = SMODS.blueprint_effect(card, context.other_card, context.other_context)
-      return_val.card = card
-      return_val.focus = card
-
-      if return_val.extra then
-        return_val.extra.focus = card
-      end
+      return_val.message_card = card
 
       return return_val
     end

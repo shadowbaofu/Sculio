@@ -9,7 +9,7 @@ SMODS.Joker {
     }
   },
 
-  config = { extra = { money_gain = 1, triggers_per_gain = 10, triggers_since_gain = 0 } },
+  config = { extra = { money_gain = 1, triggers_per_gain = 1, triggers_since_gain = 0 } },
   unlocked = true,
   discovered = true,
   rarity = 2, -- Uncommon
@@ -28,7 +28,8 @@ SMODS.Joker {
 
         return {
           dollars = card.ability.extra.money_gain,
-          card = card
+          card = card,
+          message_card = card
         }
       end
     end

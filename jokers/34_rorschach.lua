@@ -3,9 +3,9 @@ SMODS.Joker {
   loc_txt = {
     name = 'Rorschach',
     text = {
-      'Cards in the {C:attention}first{}',
-      '{C:attention}discard{} will be {C:attention}drawn{}',
-      '{C:attention}first{} in the {C:attention}next blind{}'
+      'Cards in the {C:attention}first discard{} made',
+      'while {C:attention}this is the rightmost Joker{}',
+      'will be {C:attention}drawn first next blind{}'
     }
   },
 
@@ -21,12 +21,13 @@ SMODS.Joker {
     if context.first_hand_drawn and not context.blueprint then
       card.ability.extra.card_ids_to_draw_next = {}
 
-      local eval = function() return G.GAME.current_round.discards_used == 0 and not G.RESET_JIGGLES end
+      local eval = function() return #card.ability.extra.card_ids_to_draw_next == 0 and not G.RESET_JIGGLES end
       juice_card_until(card, eval, true)
     end
 
-    if context.discard and G.GAME.current_round.discards_used <= 0 and context.other_card.ID == context.full_hand[1].ID and not context.blueprint then
-      -- Skip if Trading Card also takes effect.
+    -- If discarding, this is the rightmost Joker, no cards have been marked for the next blind, this is the first card being discarded in the set, and this is not being copied, then:
+    if context.discard and G.jokers.cards[#G.jokers.cards] == card and #card.ability.extra.card_ids_to_draw_next == 0 and context.other_card.ID == context.full_hand[1].ID and not context.blueprint then
+      -- Skip if Trading Card is also triggered.
       if #context.full_hand == 1 then
         for i = 1, #G.jokers.cards do
           joker = G.jokers.cards[i]

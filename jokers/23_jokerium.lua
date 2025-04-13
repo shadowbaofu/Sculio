@@ -4,7 +4,7 @@ SMODS.Joker {
     name = 'Jokerium',
     text = {
       'Adds {C:attention}#1#{} {C:dark_edition}Negative{}',
-      '{C:spectral}Black Hole{} cards each time',
+      '{C:spectral}Black Hole{} card each time',
       '{C:attention}#2# {C:attention}Boss Blind{} is defeated',
       '{C:inactive}#3# remaining{}',
     }

@@ -10,7 +10,7 @@ SMODS.Joker {
     }
   },
 
-  config = { extra = { odds = 8 } },
+  config = { extra = { odds = 4 } },
   unlocked = true,
   discovered = true,
   rarity = 2, -- Uncommon

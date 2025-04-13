@@ -18,7 +18,7 @@ SMODS.Joker {
   cost = 9,
   calculate = function(self, card, context)
     -- Based off of Ceremonial Dagger
-    if context.setting_blind and not card.debuff then
+    if context.setting_blind and not card.debuff and not context.blueprint then
       local my_pos = nil
 
       for i = 1, #G.jokers.cards do

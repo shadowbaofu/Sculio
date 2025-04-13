@@ -15,6 +15,7 @@ SMODS.Joker {
   atlas = 'Sculio',
   pos = { x = 4, y = 3 },
   cost = 10,
+  blueprint_compat = true,
   calculate = function(self, card, context)
     if context.playing_card_added and #context.cards == 1 then
       bought_card = context.cards[1]
@@ -23,6 +24,7 @@ SMODS.Joker {
       local isbool = {[true]=true, [false]=true}
       if isbool[bought_card] then
         -- Incompatible: the cards being added (sometimes is true when used from vanilla items)
+        -- Happens with DNA.
         return true
       end
 

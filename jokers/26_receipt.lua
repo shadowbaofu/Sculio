@@ -17,7 +17,7 @@ SMODS.Joker {
   cost = 8,
   eternal_compat = false,
   calculate = function(self, card, context)
-    if context.selling_self then
+    if context.selling_self and not context.blueprint then
       G.E_MANAGER:add_event(Event({
         func = (function()
           add_tag(Tag('tag_voucher'))

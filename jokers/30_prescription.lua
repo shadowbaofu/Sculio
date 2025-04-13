@@ -43,7 +43,7 @@ SMODS.Joker {
       }
     end
 
-    if context.selling_self and card.ability.extra.rounds_elapsed >= card.ability.extra.rounds_until_active then
+    if context.selling_self and card.ability.extra.rounds_elapsed >= card.ability.extra.rounds_until_active and not context.blueprint then
       for k, v in ipairs(G.jokers.cards) do
         is_perishable = v.ability.perishable
 

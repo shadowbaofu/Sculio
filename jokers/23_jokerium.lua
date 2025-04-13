@@ -4,19 +4,20 @@ SMODS.Joker {
     name = 'Jokerium',
     text = {
       'Adds {C:attention}#1#{} {C:dark_edition}Negative{}',
-      ' {C:spectral}Black Hole{} cards each time',
-      '{C:attention}#2# {C:attention}Boss Blinds{} are defeated',
+      '{C:spectral}Black Hole{} cards each time',
+      '{C:attention}#2# {C:attention}Boss Blind{} is defeated',
       '{C:inactive}#3# remaining{}',
     }
   },
 
-  config = { extra = { black_holes_per_cycle = 2, boss_blinds_per_cycle = 3, boss_blinds_since_last_cycle = 0 } },
+  config = { extra = { black_holes_per_cycle = 1, boss_blinds_per_cycle = 1, boss_blinds_since_last_cycle = 0 } },
   unlocked = true,
   discovered = true,
   rarity = 2, -- Uncommon
   atlas = 'Sculio',
   pos = { x = 4, y = 2 },
   cost = 7,
+  blueprint_compat = true,
   loc_vars = function(self, info_queue, card)
     info_queue[#info_queue+1] = G.P_CENTERS.e_negative
     info_queue[#info_queue+1] = G.P_CENTERS.c_black_hole
@@ -30,7 +31,7 @@ SMODS.Joker {
       }
     end
 
-    if context.end_of_round and not context.repetition and context.game_over == false and not context.blueprint and G.GAME.blind.boss then
+    if context.end_of_round and not context.repetition and context.game_over == false and G.GAME.blind.boss then
       card.ability.extra.boss_blinds_since_last_cycle = card.ability.extra.boss_blinds_since_last_cycle + 1
 
       if card.ability.extra.boss_blinds_since_last_cycle >= card.ability.extra.boss_blinds_per_cycle then

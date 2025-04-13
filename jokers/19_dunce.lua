@@ -16,6 +16,7 @@ SMODS.Joker {
   atlas = 'Sculio',
   pos = { x = 0, y = 2 },
   cost = 10,
+  blueprint_compat = true,
   calculate = function(self, card, context)
     if context.before then
       for i = 1, #G.jokers.cards do

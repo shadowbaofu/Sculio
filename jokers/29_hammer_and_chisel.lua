@@ -17,6 +17,7 @@ SMODS.Joker {
   atlas = 'Sculio',
   pos = { x = 0, y = 3 },
   cost = 7,
+  blueprint_compat = true,
   loc_vars = function(self, info_queue, card)
     info_queue[#info_queue+1] = G.P_CENTERS.m_stone
     return { vars = { (G.GAME.probabilities.normal or 1), card.ability.extra.shatter_odds, card.ability.extra.chip_bonus, card.ability.extra.mult_bonus } }

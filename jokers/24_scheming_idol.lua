@@ -14,6 +14,7 @@ SMODS.Joker {
   atlas = 'Sculio',
   pos = { x = 5, y = 2 },
   cost = 10,
+  blueprint_compat = true,
   calculate = function(self, card, context)
     if context.post_trigger and context.other_card.config.center.rarity == 1 then
       return_val = SMODS.blueprint_effect(card, context.other_card, context.other_context)

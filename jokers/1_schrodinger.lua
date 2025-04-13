@@ -15,6 +15,7 @@ SMODS.Joker {
   atlas = 'Sculio',
   pos = { x = 0, y = 0 },
   cost = 4,
+  blueprint_compat = true,
   loc_vars = function(self, info_queue, card)
     return { vars = { (G.GAME.probabilities.normal or 1), card.ability.extra.odds, card.ability.extra.x_mult } }
   end,

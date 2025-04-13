@@ -17,6 +17,7 @@ SMODS.Joker {
   atlas = 'Sculio',
   pos = { x = 8, y = 0 },
   cost = 7,
+  blueprint_compat = true,
   loc_vars = function(self, info_queue, card)
     mult_text = card.ability.extra.mult
 

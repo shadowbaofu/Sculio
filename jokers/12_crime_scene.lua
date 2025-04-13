@@ -18,6 +18,7 @@ SMODS.Joker {
   atlas = 'Sculio',
   pos = { x = 1, y = 1 },
   cost = 7,
+  blueprint_compat = true,
   loc_vars = function(self, info_queue, card)
     return { vars = { card.ability.extra.mult } }
   end,
@@ -27,7 +28,7 @@ SMODS.Joker {
       juice_card_until(card, eval, true)
     end
 
-    if context.before and G.GAME.current_round.hands_played == 0 then
+    if context.before and G.GAME.current_round.hands_played == 0 and not context.blueprint then
       if #context.full_hand == 1 then
         base_chips = context.full_hand[1]:get_id()
 

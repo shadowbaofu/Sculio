@@ -5,13 +5,12 @@ SMODS.Joker {
     text = {
       'Prevents Death, {S:1.1,C:red,E:2}self destructs{}, and',
       'permanently gains {C:blue}+#1#{} hand if chips',
-      'scored are at least {C:attention}#2#%{} of requirement',
-      'No effect if the Blind is defeated',
-      ''
+      'scored are at least {C:attention}#2#%{} of requirement.',
+      'No effect if the Blind is defeated'
     }
   },
 
-  config = { extra = { hands_gain = 1, required_score_percentage = 95 } },
+  config = { extra = { hands_gain = 1, required_score_percentage = 85 } },
   unlocked = true,
   discovered = true,
   rarity = 3, -- Rare

@@ -10,7 +10,7 @@ SMODS.Joker {
     }
   },
 
-  config = { extra = { money_gain = 3, mult = 0, mult_gain = 4, spend_per_gain = 15, spent_since_gain = 0 } },
+  config = { extra = { money_gain = 3, mult = 0, mult_gain = 4, spend_per_gain = 30, spent_since_gain = 0 } },
   unlocked = true,
   discovered = true,
   rarity = 1, -- Common

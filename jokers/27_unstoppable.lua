@@ -5,12 +5,13 @@ SMODS.Joker {
     text = {
       'When this Joker is {C:attention}sold{}, it',
       'gains {X:mult,C:white} X#2# {} Mult and',
-      '{C:attention}returns to the next shop{}',
+      '{C:attention}returns to the next shop{}.',
+      '{C:attention}Sell value{} starts at {C:money}$#3#{}',
       '{C:inactive}(Currently {X:mult,C:white} X#1# {C:inactive} Mult)',
     }
   },
 
-  config = { extra = { x_mult = 1, x_mult_gain = 0.25 } },
+  config = { extra = { x_mult = 1, x_mult_gain = 0.25, sell_cost = 0 } },
   unlocked = true,
   discovered = true,
   rarity = 2, -- Uncommon
@@ -20,11 +21,11 @@ SMODS.Joker {
   eternal_compat = false,
   blueprint_compat = true,
   loc_vars = function(self, info_queue, card)
-    return { vars = { card.ability.extra.x_mult, card.ability.extra.x_mult_gain } }
+    return { vars = { card.ability.extra.x_mult, card.ability.extra.x_mult_gain, card.ability.extra.sell_cost } }
   end,
   add_to_deck = function(self, card, from_debuff)
     -- Set sell cost to $0.
-    card.ability.extra_value = (card.ability.extra_value or 0) - card.sell_cost
+    card.ability.extra_value = (card.ability.extra_value or 0) - card.sell_cost + card.ability.extra.sell_cost
     card:set_cost()
   end,
   calculate = function(self, card, context)

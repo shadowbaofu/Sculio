@@ -17,7 +17,7 @@ SMODS.Joker {
   cost = 10,
   blueprint_compat = true,
   calculate = function(self, card, context)
-    if context.playing_card_added and #context.cards == 1 then
+    if context.playing_card_added and #context.cards == 1 and G.shop then
       bought_card = context.cards[1]
 
       -- https://www.reddit.com/r/lua/comments/1dz389o/comment/lcghclt/

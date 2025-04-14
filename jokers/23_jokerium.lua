@@ -24,13 +24,6 @@ SMODS.Joker {
     return { vars = { card.ability.extra.black_holes_per_cycle, card.ability.extra.boss_blinds_per_cycle, card.ability.extra.boss_blinds_per_cycle - card.ability.extra.boss_blinds_since_last_cycle } }
   end,
   calculate = function(self, card, context)
-    if context.joker_main then
-      return {
-        mult_mod = card.ability.extra.mult,
-        message = localize { type = 'variable', key = 'a_mult', vars = { card.ability.extra.mult } }
-      }
-    end
-
     if context.end_of_round and not context.repetition and context.game_over == false and G.GAME.blind.boss then
       card.ability.extra.boss_blinds_since_last_cycle = card.ability.extra.boss_blinds_since_last_cycle + 1
 

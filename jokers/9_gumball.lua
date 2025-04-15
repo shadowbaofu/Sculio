@@ -3,10 +3,10 @@ SMODS.Joker {
   loc_txt = {
     name = 'Gumball Machine',
     text = {
-      'Adds {C:mult}#2#{} Mult when a booster pack is opened',
+      '{C:mult}+#2#{} Mult when a booster pack is opened',
       '{C:mult}#3#{} Mult when a booster pack is skipped',
-      'Destroyed if Mult reaches {C:mult}#4#{} Mult',
-      '{C:inactive}(Currently {C:mult}#1#{}{C:inactive} Mult)'
+      'Destroyed if Mult reaches {C:mult}+#4#{} Mult',
+      '{C:inactive}(Currently {C:mult}+#1#{}{C:inactive} Mult)'
     }
   },
 
@@ -19,31 +19,7 @@ SMODS.Joker {
   cost = 7,
   blueprint_compat = true,
   loc_vars = function(self, info_queue, card)
-    mult_text = card.ability.extra.mult
-
-    if mult_text >= 0 then
-      mult_text = '+' .. mult_text
-    end
-
-    mult_add_open_text = card.ability.extra.mult_add_open
-
-    if mult_add_open_text >= 0 then
-      mult_add_open_text = '+' .. mult_add_open_text
-    end
-
-    mult_add_skip_text = card.ability.extra.mult_add_skip
-
-    if mult_add_skip_text >= 0 then
-      mult_add_skip_text = '+' .. mult_add_skip_text
-    end
-
-    mult_min_text = card.ability.extra.mult_min
-
-    if mult_min_text >= 0 then
-      mult_min_text = '+' .. mult_min_text
-    end
-
-    return { vars = { mult_text, mult_add_open_text, mult_add_skip_text, mult_min_text } }
+    return { vars = { card.ability.extra.mult, card.ability.extra.mult_add_open, card.ability.extra.mult_add_skip, card.ability.extra.mult_min } }
   end,
   calculate = function(self, card, context)
     if context.joker_main then
@@ -75,14 +51,8 @@ SMODS.Joker {
 
         G.E_MANAGER:add_event(Event({
           func = function()
-            mult_add_skip_text = card.ability.extra.mult_add_skip
-
-            if mult_add_skip_text >= 0 then
-              mult_add_skip_text = '+' .. mult_add_skip_text
-            end
-
             card_eval_status_text(card, 'extra', nil, nil, nil, {
-              message = '' .. mult_add_skip_text,
+              message = localize { type = 'variable', key = 'a_mult_minus', vars = { math.abs(card.ability.extra.mult_add_skip) } },
               colour = G.C.RED,
               delay = 0.45
             })

@@ -3,10 +3,10 @@ SMODS.Joker {
   loc_txt = {
     name = 'Impossible Stairs',
     text = {
-      'This Joker gains between {C:mult}#3#{}',
+      'This Joker gains between {C:mult}+#3#{}',
       'and {C:mult}#2#{} Mult per hand played',
-      'Destroyed if Mult reaches {C:mult}#4#{} Mult',
-      '{C:inactive}(Currently {C:mult}#1#{}{C:inactive} Mult)'
+      'Destroyed if Mult reaches {C:mult}+#4#{} Mult',
+      '{C:inactive}(Currently {C:mult}+#1#{}{C:inactive} Mult)'
     }
   },
 
@@ -19,31 +19,7 @@ SMODS.Joker {
   cost = 3,
   blueprint_compat = true,
   loc_vars = function(self, info_queue, card)
-    mult_text = card.ability.extra.mult
-
-    if mult_text >= 0 then
-      mult_text = '+' .. mult_text
-    end
-
-    mult_add_min_text = card.ability.extra.mult_add_min
-
-    if mult_add_min_text >= 0 then
-      mult_add_min_text = '+' .. mult_add_min_text
-    end
-
-    mult_add_max_text = card.ability.extra.mult_add_max
-
-    if mult_add_max_text >= 0 then
-      mult_add_max_text = '+' .. mult_add_max_text
-    end
-
-    mult_min_text = card.ability.extra.mult_min
-
-    if mult_min_text >= 0 then
-      mult_min_text = '+' .. mult_min_text
-    end
-
-    return { vars = { mult_text, mult_add_min_text, mult_add_max_text, mult_min_text } }
+    return { vars = { card.ability.extra.mult, card.ability.extra.mult_add_min, card.ability.extra.mult_add_max, card.ability.extra.mult_min } }
   end,
   calculate = function(self, card, context)
     if context.before and not context.blueprint then

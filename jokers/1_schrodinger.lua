@@ -1,7 +1,7 @@
 SMODS.Joker {
   key = 'schrodinger',
   loc_txt = {
-    name = 'Schrodinger\'s Joker',
+    name = 'Schrödinger\'s Joker',
     text = {
       '{C:green}#1# in #2#{} chance',
       'for {X:mult,C:white}X#3#{} Mult'

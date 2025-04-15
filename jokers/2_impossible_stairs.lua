@@ -46,14 +46,7 @@ SMODS.Joker {
     return { vars = { mult_text, mult_add_min_text, mult_add_max_text, mult_min_text } }
   end,
   calculate = function(self, card, context)
-    if context.joker_main then
-      return {
-        mult_mod = card.ability.extra.mult,
-        message = localize { type = 'variable', key = 'a_mult', vars = { card.ability.extra.mult } }
-      }
-    end
-
-    if context.after and not context.blueprint then
+    if context.before and not context.blueprint then
       math.randomseed(pseudorandom('impossible_stairs'))
       add = math.random(card.ability.extra.mult_add_min, card.ability.extra.mult_add_max)
       card.ability.extra.mult = card.ability.extra.mult + add
@@ -82,13 +75,24 @@ SMODS.Joker {
         }))
       end
 
-      mult_text = card.ability.extra.mult
-
-      if mult_text >= 0 then
-        mult_text = '+' .. mult_text
+      if add >= 0 then
+        return {
+          message = localize{type='variable', key='a_mult', vars={add}},
+          colour = G.C.MULT
+        }
+      else
+        return {
+          message = localize{type='variable', key='a_mult_minus', vars={math.abs(add)}},
+          colour = G.C.MULT
+        }
       end
+    end
 
-      return { message = mult_text }
+    if context.joker_main then
+      return {
+        mult_mod = card.ability.extra.mult,
+        message = localize { type = 'variable', key = 'a_mult', vars = { card.ability.extra.mult } }
+      }
     end
   end
 }

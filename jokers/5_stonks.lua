@@ -9,7 +9,7 @@ SMODS.Joker {
     }
   },
 
-  config = { extra = { mult = 1 } },
+  config = { extra = { mult = 2 } },
   unlocked = true,
   discovered = true,
   rarity = 1, -- Common

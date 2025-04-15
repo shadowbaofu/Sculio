@@ -4,7 +4,7 @@ SMODS.Joker {
     name = 'Anatomy',
     text = {
       'Scored {C:attention}number cards{} have',
-      '{C:green}#1#X their rank out of #2#{}',
+      '{C:green}#1# times their rank out of #2#{}',
       'to be retriggered once'
     }
   },

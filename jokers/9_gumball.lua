@@ -10,7 +10,7 @@ SMODS.Joker {
     }
   },
 
-  config = { extra = { mult = 5, mult_add_open = 3, mult_add_skip = -6, mult_min = 0 } },
+  config = { extra = { mult = 3, mult_add_open = 2, mult_add_skip = -4, mult_min = 0 } },
   unlocked = true,
   discovered = true,
   rarity = 2, -- Uncommon

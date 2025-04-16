@@ -47,7 +47,7 @@ SMODS.Joker {
         end
 
         return {
-            message = '+' .. card.ability.extra.black_holes_per_cycle .. ' Black Hole' .. ((card.ability.extra.black_holes_per_cycle == 1 and '') or 's'),
+            message = '+' .. card.ability.extra.black_holes_per_cycle .. ' Black Hole'),
             colour = G.C.SECONDARY_SET.Spectral
         }
       else

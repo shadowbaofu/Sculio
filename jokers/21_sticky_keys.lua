@@ -6,7 +6,7 @@ SMODS.Joker {
       'Changes {C:mult}Mult{} to {C:attention}base chips{}',
       'of {C:attention}first scoring card{}',
       'every {C:attention}#2#{} hands played',
-      '{C:inactive}#3# hand#4# remaining{}',
+      '{C:inactive}#3# remaining{}',
       '{C:inactive}(Currently {C:mult}+#1#{}{C:inactive} Mult)',
     }
   },
@@ -20,7 +20,7 @@ SMODS.Joker {
   cost = 3,
   blueprint_compat = true,
   loc_vars = function(self, info_queue, card)
-    return { vars = { card.ability.extra.mult, card.ability.extra.hands_until_change, card.ability.extra.hands_until_change - card.ability.extra.hands_elapsed, ((card.ability.extra.hands_until_change - card.ability.extra.hands_elapsed == 1 and '') or 's') } }
+    return { vars = { card.ability.extra.mult, card.ability.extra.hands_until_change, card.ability.extra.hands_until_change - card.ability.extra.hands_elapsed } }
   end,
   calculate = function(self, card, context)
     if context.joker_main and card.ability.extra.mult > 0 then

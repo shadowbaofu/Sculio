@@ -6,11 +6,11 @@ SMODS.Joker {
       'If {C:attention}first hand{} of round is your',
       '{C:attention}most played hand{}, {C:attention}destroy{}',
       '{C:attention}scored cards{}, and {C:attention}level{}',
-      '{C:attention}up hand #1# times{}'
+      '{C:attention}up hand #1# time{}'
     }
   },
 
-  config = { extra = { levels_to_increase = 2 } },
+  config = { extra = { levels_to_increase = 1 } },
   unlocked = true,
   discovered = true,
   rarity = 3, -- Rare

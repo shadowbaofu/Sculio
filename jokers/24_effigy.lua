@@ -1,7 +1,7 @@
 SMODS.Joker {
-  key = 'scheming_idol',
+  key = 'effigy',
   loc_txt = {
-    name = 'Scheming Idol',
+    name = 'Effigy',
     text = {
       'Copies ability of a',
       '{C:attention}random Joker{}'

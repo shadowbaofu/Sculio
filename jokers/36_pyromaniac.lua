@@ -3,10 +3,11 @@ SMODS.Joker {
   loc_txt = {
     name = 'Pyromaniac',
     text = {
-      'If {C:attention}first hand{} of round is your',
-      '{C:attention}most played hand{}, {C:attention}destroy{}',
-      '{C:attention}scored cards{}, and {C:attention}level{}',
-      '{C:attention}up hand #1# time{}'
+      'If {C:attention}first hand{} of round is',
+      'your {C:attention}most played hand{}',
+      '{C:attention}level up hand #1# time{} and',
+      '{C:attention}destroy scored cards{}'
+      
     }
   },
 
@@ -28,7 +29,7 @@ SMODS.Joker {
     end
 
     if context.before then
-      card.ability.cards_to_burn = {}
+      burn_hand = false
 
       if G.GAME.current_round.hands_played == 0 then
         -- Based off of Obelisk.
@@ -50,21 +51,13 @@ SMODS.Joker {
             level_up_hand(context.blueprint_card or card, text, nil, 1)
           end
 
-          card.ability.cards_to_burn = context.scoring_hand
+          burn_hand = true
         end
       end
     end
 
-    if context.after then
-      G.E_MANAGER:add_event(Event({
-        func = function()
-          for _, card_to_burn in pairs(card.ability.cards_to_burn) do
-            card_to_burn:start_dissolve({G.C.GOLD})
-          end
-
-          return true
-        end
-      }))
+    if context.destroying_card and not context.blueprint then
+      return burn_hand
     end
   end
 }

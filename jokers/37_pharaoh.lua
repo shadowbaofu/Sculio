@@ -1,7 +1,7 @@
 SMODS.Joker {
-  key = 'hieroglyphics',
+  key = 'pharaoh',
   loc_txt = {
-    name = 'Hieroglyphics',
+    name = 'Pharaoh',
     text = {
       'All {C:attention}number cards{} are',
       '{C:attention}debuffed{}, {C:attention}face cards{}',

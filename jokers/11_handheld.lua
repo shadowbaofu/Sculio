@@ -1,11 +1,45 @@
+function Card:is_suit(suit, bypass_debuff, flush_calc)
+  if flush_calc then
+    if self.ability.effect == 'Stone Card' then
+      return false
+    end
+
+    -- Modified:
+    if (self.ability.name == "Wild Card" or next(find_joker('j_Sculio_handheld'))) and not self.debuff then
+      return true
+    end
+
+    if next(find_joker('Smeared Joker')) and (self.base.suit == 'Hearts' or self.base.suit == 'Diamonds') == (suit == 'Hearts' or suit == 'Diamonds') then
+      return true
+    end
+
+    return self.base.suit == suit
+  else
+    if self.debuff and not bypass_debuff then return end
+
+    if self.ability.effect == 'Stone Card' then
+      return false
+    end
+
+    if self.ability.name == "Wild Card" or next(find_joker('j_Sculio_handheld')) then
+      return true
+    end
+
+    if next(find_joker('Smeared Joker')) and (self.base.suit == 'Hearts' or self.base.suit == 'Diamonds') == (suit == 'Hearts' or suit == 'Diamonds') then
+      return true
+    end
+
+    return self.base.suit == suit
+  end
+end
+
 SMODS.Joker {
   key = 'handheld',
   loc_txt = {
     name = 'Handheld',
     text = {
-      'Scored {C:clubs}Clubs{} and {C:spades}Spades{} become',
-      '{C:attention}Wild Cards{} if they are not',
-      'already enhanced'
+      'All cards are treated',
+      'like {C:attention}Wild Cards{}'
     }
   },
 
@@ -17,22 +51,5 @@ SMODS.Joker {
   cost = 9,
   loc_vars = function(self, info_queue, card)
     info_queue[#info_queue+1] = G.P_CENTERS.m_wild
-  end,
-  calculate = function(self, card, context)
-    if context.before and not context.blueprint then
-      -- Based off of Vampire.
-      for k, v in ipairs(context.scoring_hand) do
-        if v.debuff == false and (v:is_suit('Clubs') or v:is_suit('Spades')) and v.config.center == G.P_CENTERS.c_base and not v.debuff and not v.vampired then
-          v:set_ability(G.P_CENTERS.m_wild, nil, true)
-
-          G.E_MANAGER:add_event(Event({
-            func = function()
-              v:juice_up()
-              return true
-            end
-          }))
-        end
-      end
-    end
   end
 }

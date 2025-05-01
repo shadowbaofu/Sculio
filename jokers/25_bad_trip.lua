@@ -3,10 +3,9 @@ SMODS.Joker {
   loc_txt = {
     name = 'Bad Trip',
     text = {
-      'After {C:attention}#1#{} rounds,',
-      'sell this card to',
-      '{C:attention}randomize{} the',
-      '{C:attention}rank and suit{} of every card in deck',
+      'After {C:attention}#1#{} rounds, sell this card to',
+      '{C:attention}randomize{} the {C:attention}rank and suit{}',
+      'of every card in deck',
       '{C:inactive}(Currently {C:attention}#2#{C:inactive} / #1#)'
     }
   },

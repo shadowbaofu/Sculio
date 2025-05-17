@@ -9,7 +9,7 @@ SMODS.Joker {
     }
   },
 
-  config = { extra = { money_gain = 1, triggers_per_gain = 1, triggers_since_gain = 0 } },
+  config = { extra = { money_gain = 1, triggers_per_gain = 5, triggers_since_gain = 0 } },
   unlocked = true,
   discovered = true,
   rarity = 2, -- Uncommon

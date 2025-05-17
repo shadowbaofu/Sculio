@@ -21,6 +21,7 @@ function Card:is_suit(suit, bypass_debuff, flush_calc)
       return false
     end
 
+    
     if self.ability.name == "Wild Card" or next(find_joker('j_Sculio_handheld')) then
       return true
     end

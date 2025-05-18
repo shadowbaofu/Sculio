@@ -62,6 +62,8 @@ SMODS.Tag {
       'with {X:mult,C:white} X#1# {} Mult'
     }
   },
+  atlas = 'Sculio_Tags',
+  pos = { x = 1, y = 0 },
   in_pool = function(self, args)
     return false
   end,

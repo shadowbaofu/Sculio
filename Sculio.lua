@@ -11,6 +11,20 @@ SMODS.Atlas {
   py = 95
 }
 
+SMODS.Atlas {
+  key = 'Sculio_Tags',
+  path = 'Tags.png',
+  px = 34,
+  py = 34
+}
+
+SMODS.Atlas {
+  key = 'modicon',
+  path = 'Tags.png',
+  px = 34,
+  py = 34
+}
+
 SMODS.current_mod.optional_features = function()
   return {
     post_trigger = true

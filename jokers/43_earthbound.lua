@@ -133,12 +133,10 @@ SMODS.Joker {
         for j = i, i + 4 do
           if j <= #first_card_of_each_id then
             table.insert(possible_straight_cards, first_card_of_each_id[j])
+          elseif j == #first_card_of_each_id + 1 and #possible_straight_cards < 5 and first_card_of_each_id[1]:get_id() == 14 and first_card_of_each_id[j - 1]:get_id() == 2 then
+            -- Ace Low Straight
+            table.insert(possible_straight_cards, first_card_of_each_id[1])
           end
-        end
-
-        -- Low Ace.
-        if first_card_of_each_id[i]:get_id() == 2 and first_card_of_each_id[#first_card_of_each_id]:get_id() == 14 then
-          table.insert(possible_straight_cards, first_card_of_each_id[#first_card_of_each_id])
         end
 
         if #possible_straight_cards >= 4 then

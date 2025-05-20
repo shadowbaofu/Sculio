@@ -96,6 +96,7 @@ SMODS.Joker {
             self:juice_two(card, other_joker)
           elseif other_joker.ability.name == 'Turtle Bean' then
             other_joker.ability.extra.h_size = other_joker.ability.extra.h_size + other_joker.ability.extra.h_mod
+            G.hand:change_size(other_joker.ability.extra.h_mod)
             self:juice_two(card, other_joker)
           end
         end

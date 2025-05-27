@@ -42,7 +42,20 @@ SMODS.Joker {
 
       G.E_MANAGER:add_event(Event({
         func = (function()
+          -- Do not trigger Double Tag.
+          apply_to_run_functions = {}
+
+          for i = 1, #G.GAME.tags do
+            table.insert(apply_to_run_functions, G.GAME.tags[i].apply_to_run)
+            G.GAME.tags[i].apply_to_run = function() end
+          end
+
           add_tag(tag)
+
+          for i = 1, #apply_to_run_functions do
+            G.GAME.tags[i].apply_to_run = apply_to_run_functions[i]
+          end
+
           play_sound('generic1', 0.9 + math.random()*0.1, 0.8)
           play_sound('holo1', 1.2 + math.random()*0.1, 0.4)
           return true

@@ -4,7 +4,7 @@ SMODS.Joker {
     name = 'Figurine',
     text = {
       'When a Joker with an {C:attention}edition{} is sold,',
-      'this Joker gains {C:attention}#4# times{} the {C:attention}edition\'s bonus{}',
+      'this Joker gains {C:attention}#4#%{} of the {C:attention}edition\'s bonus{}',
       '{C:inactive}(Currently {C:chips}+#1#{}{C:inactive} Chips, {C:mult}+#2#{}{C:inactive} Mult, and {X:mult,C:white}X#3#{}{C:inactive} Mult)'
     }
   },
@@ -18,7 +18,7 @@ SMODS.Joker {
   cost = 10,
   blueprint_compat = true,
   loc_vars = function(self, info_queue, card)
-    return { vars = { card.ability.extra.chips, card.ability.extra.mult, card.ability.extra.x_mult, card.ability.extra.bonus_mult } }
+    return { vars = { card.ability.extra.chips, card.ability.extra.mult, card.ability.extra.x_mult, card.ability.extra.bonus_mult * 100 } }
   end,
   calculate = function(self, card, context)
     if context.cardarea == G.jokers and context.selling_card and not context.blueprint then

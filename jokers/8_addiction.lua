@@ -5,7 +5,7 @@ SMODS.Joker {
     text = {
       'If you play your most played hand,',
       'each scored {C:attention}card{} permanently gains',
-      '{C:chips}chips{} equal to {C:attention}#1# times the number{}',
+      '{C:chips}chips{} equal to {C:attention}#1#% of the number{}',
       '{C:attention}of times it has been played{}'
     }
   },
@@ -19,7 +19,7 @@ SMODS.Joker {
   cost = 7,
   blueprint_compat = true,
   loc_vars = function(self, info_queue, card)
-    return { vars = { card.ability.extra.hand_count_mult } }
+    return { vars = { card.ability.extra.hand_count_mult * 100 } }
   end,
   calculate = function(self, card, context)
     if context.individual and context.cardarea == G.play then

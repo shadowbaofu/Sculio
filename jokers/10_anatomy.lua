@@ -4,7 +4,7 @@ SMODS.Joker {
     name = 'Anatomy',
     text = {
       'Scored {C:attention}number cards{} have',
-      '{C:green}#1# times their rank out of #2#{}',
+      '{C:green}#1#% of their rank out of #2#{}',
       'to be retriggered once'
     }
   },
@@ -18,7 +18,7 @@ SMODS.Joker {
   cost = 7,
   blueprint_compat = true,
   loc_vars = function(self, info_queue, card)
-    return { vars = { (G.GAME.probabilities.normal or 1), card.ability.extra.odds } }
+    return { vars = { (G.GAME.probabilities.normal or 1) * 100, card.ability.extra.odds } }
   end,
   calculate = function(self, card, context)
     if context.cardarea == G.play and context.repetition and not context.repetition_only then

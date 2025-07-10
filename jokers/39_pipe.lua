@@ -1,11 +1,11 @@
 SMODS.Joker {
-  key = 'bad_trip',
+  key = 'pipe',
   loc_txt = {
-    name = 'Bad Trip',
+    name = 'Pipe Joker',
     text = {
-      'After {C:attention}#1#{} rounds, sell this card to',
-      '{C:attention}randomize{} the {C:attention}rank and suit{}',
-      'of every card in deck',
+      'After {C:attention}#1#{} rounds, sell this',
+      'card to add {C:dark_edition}Negative{}',
+      'to a random {C:attention}Joker',
       '{C:inactive}(Currently {C:attention}#2#{C:inactive} / #1#)'
     }
   },
@@ -13,10 +13,10 @@ SMODS.Joker {
   config = { extra = { rounds_until_active = 2, rounds_elapsed = 0 } },
   unlocked = true,
   discovered = true,
-  rarity = 2, -- Uncommon
+  rarity = 3, -- Rare
   atlas = 'Sculio',
-  pos = { x = 6, y = 2 },
-  cost = 6,
+  pos = { x = 0, y = 4 },
+  cost = 8,
   eternal_compat = false,
   loc_vars = function(self, info_queue, card)
     return { vars = { card.ability.extra.rounds_until_active, card.ability.extra.rounds_elapsed } }
@@ -38,19 +38,19 @@ SMODS.Joker {
     end
 
     if context.selling_self and card.ability.extra.rounds_elapsed >= card.ability.extra.rounds_until_active and not context.blueprint then
-      for k, v in ipairs(G.deck.cards) do
-        card_code, _ = pseudorandom_element(G.P_CARDS, pseudoseed('bad_trip'))
-        v:set_base(card_code)
+      -- Based on Ectoplasm.
+      eligible_jokers = {}
+      for k, v in pairs(G.jokers.cards) do
+        if v.ability.set == 'Joker' and (not v.edition) and v.ability.name ~= 'j_Sculio_pipe' then
+          table.insert(eligible_jokers, v)
+        end
       end
 
-      for k, v in ipairs(G.hand.cards) do
-        card_code, _ = pseudorandom_element(G.P_CARDS, pseudoseed('bad_trip'))
-        v:set_base(card_code)
-      end
+      eligible_card = pseudorandom_element(eligible_jokers, pseudoseed('pipe'))
 
-      return {
-        message = 'Deck randomized!'
-      }
+      if eligible_card then
+        eligible_card:set_edition({negative = true}, true)
+      end
     end
   end
 }

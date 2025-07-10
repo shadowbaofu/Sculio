@@ -1,7 +1,7 @@
 SMODS.Joker {
   key = 'wacky',
   loc_txt = {
-    name = 'Wacky Joker',
+    name = 'Car Sale',
     text = {
       'Create a copy of {C:tarot}The Fool{} if hand scores',
       'at least {C:attention}#1#%{} of required chips',
@@ -15,7 +15,6 @@ SMODS.Joker {
   rarity = 2, -- Uncommon
   atlas = 'Sculio',
   pos = { x = 5, y = 4 },
-  soul_pos = { x = 6, y = 4 },
   cost = 6,
   loc_vars = function(self, info_queue, card)
     return { vars = { card.ability.extra.required_chip_percentage * 100 } }

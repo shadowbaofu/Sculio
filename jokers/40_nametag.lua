@@ -21,10 +21,11 @@ SMODS.Joker {
   get_x_mult_mod = function(self, card)
     named_jokers = 0
 
-    -- TODO: Make work
-    for k, v in ipairs(G.jokers.cards) do
-      if v.ability.name:find('Joker') then
-        named_jokers = named_jokers + 1
+    if G.jokers then
+      for k, v in ipairs(G.jokers.cards) do
+        if v.ability.name:find('Joker') then
+          named_jokers = named_jokers + 1
+        end
       end
     end
 

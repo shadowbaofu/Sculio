@@ -17,7 +17,7 @@ _Sculio_ is a Balatro mod that is currently in development. It aims to add a col
 
 **What does Sculio add to the game?**
 
-Currently we have implemented a decent amount of jokers, however it is unclear whether we will add vouchers, new consumables, variants or decks to the game. Any other content will be considered later in development once all jokers have been ironed out for bugs and have been properly balanced. 
+Currently we have 44 new jokers, however it is unclear whether we will add vouchers, new consumables, variants or decks to the game. Any other content will be considered later in development once all jokers have been ironed out for bugs and have been properly balanced. 
 
 **Is Sculio compatible with other Balatro Mods?**
 

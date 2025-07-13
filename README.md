@@ -17,7 +17,7 @@ _Sculio_ is a Balatro mod that is currently in development. It aims to add a col
 
 **What does Sculio add to the game?**
 
-Currently we have implemented 44 new jokers, however it is unclear whether we will add vouchers, new consumables, variants or decks to the game. Any other content will be considered later in development once all jokers have been ironed out for bugs and have been properly balanced. 
+Currently we have implemented 45 new jokers, however it is unclear whether we will add vouchers, new consumables, variants or decks to the game. Any other content will be considered later in development once all jokers have been ironed out for bugs and have been properly balanced. 
 
 **Is Sculio compatible with other Balatro Mods?**
 
@@ -36,7 +36,7 @@ https://github.com/Steamodded/smods/wiki
 
 **1. Download the zip file.**
  
-You can find this in ⁠news-and-patchnotes as we regularly update the mod and we will frequently upload new versions.
+You can download the zip file by pressing the dropdown menu labelled _'Code'_ and by pressing the _'Download Zip'_ button. 
 
 **2. Open/extract the Sculio zip file.**
  
@@ -51,3 +51,16 @@ The mod folder is located in User/Appdata/Roaming/Balatro/Mods. Ensure that the 
 Go into steam and launch the game. Sculio should be in the mod menu and should be configurable from there. If you have any difficulties regarding the installation feel free to ask for help in ⁠our discord server.
 
 _Keep in mind that Sculio may not be compatible with other mods, and this may interfere with how stable Balatro is. Easiest way to fix this issue is to delete every other mod or to disable them._
+
+<p align="center">
+<img width="700" height="200" alt="Picture4" src="https://github.com/user-attachments/assets/849538a4-bcce-4d31-9eab-e8aab9de7f60" />
+</p>
+
+**BrandonE**: _Developer_
+
+**crmykybord**: _Sprite Artist_
+
+**chily**: _Joker Ideas + Balancing_
+
+**SPECIAL THANKS TO:**
+u/Spicy_burritos(Dunce Artwork + Concept) u/The_Math_Hatter u/Different_Ad2722 u/reilywalker195 u/Geekazoid213 u/CraftyCreeper64 u/Jazzlike_Spirit_9943 u/Lazy_Tutor9447 Valunar u/DrBacon27 u/mysterygift17 u/-Error-69 u/charsol1545 u/santh91 u/TheFunny64074 u/Any_Thanks u/zapirate_2020 isaaciscrying u/manurosadilla Soup_can54 Marffe HumanDactyl __Heavy_Water Toasty Glamdring

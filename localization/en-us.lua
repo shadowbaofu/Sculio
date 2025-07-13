@@ -4,18 +4,21 @@ return {
       Sculio = {
         name = 'Sculio',
         text = {
-          'Vanilla modpack for Balatro.',
+          'A vanilla-esque mod that aims to add new and faithful content to Balatro (Currently contains 40+ Jokers)',
           ' ',
           '{C:attention}Credits:{}',
-          '{C:money}u/crmykybord{}: Main artwork and concepts',
-          '{C:money}chily{}: Tweaks',
-          '{C:money}BrandonE{}: Implementation',
-          '{C:money}u/Spicy_burritos{}: Dunce artwork and concept',
+          '{C:money}u/crmykybord{}: Sprite Artist',
+          '{C:money}BrandonE{}: Developer',
+          '{C:money}chily{}: Joker Ideas + Balancing',
           ' ',
           '{C:attention}Special Thanks (Joker Ideas):{}',
-          '{C:inactive}u/The_Math_Hatter u/Different_Ad2722 u/reilywalker195',
-          '{C:inactive}u/ Geekazoid213 u/CraftyCreeper64 u/Jazzlike_Spirit_9943',
-          '{C:inactive}u/Lazy_Tutor9447 Valunar u/DrBacon27 u/mysterygift17 u/-Error-69 u/charsol1545'
+          '{C:inactive}u/Spicy_burritos (Dunce Artwork + Concept), u/The_Math_Hatter, u/Different_Ad2722,',
+          '{C:inactive}u/reilywalker195, u/Geekazoid213, u/CraftyCreeper64,',
+          '{C:inactive}u/Jazzlike_Spirit_9943, u/Lazy_Tutor9447, Valunar, u/DrBacon27,',
+          '{C:inactive}u/mysterygift17, u/-Error-69, u/charsol1545, u/santh91,',
+          '{C:inactive}u/TheFunny64074, u/Any_Thanks, u/zapirate_2020, isaaciscrying,',
+          '{C:inactive}u/manurosadilla, Soup_can54, Marffe, HumanDactyl,',
+          '{C:inactive}__Heavy_Water, Toasty, Glamdring',
         }
       }
     },

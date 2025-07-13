@@ -56,11 +56,16 @@ _Keep in mind that Sculio may not be compatible with other mods, and this may in
 <img width="700" height="200" alt="Picture4" src="https://github.com/user-attachments/assets/849538a4-bcce-4d31-9eab-e8aab9de7f60" />
 </p>
 
-**BrandonE**: _Developer_
-
 **crmykybord**: _Sprite Artist_
+
+**BrandonE**: _Developer_
 
 **chily**: _Joker Ideas + Balancing_
 
+<p align="center">
+
 **SPECIAL THANKS TO:**
-u/Spicy_burritos(Dunce Artwork + Concept) u/The_Math_Hatter u/Different_Ad2722 u/reilywalker195 u/Geekazoid213 u/CraftyCreeper64 u/Jazzlike_Spirit_9943 u/Lazy_Tutor9447 Valunar u/DrBacon27 u/mysterygift17 u/-Error-69 u/charsol1545 u/santh91 u/TheFunny64074 u/Any_Thanks u/zapirate_2020 isaaciscrying u/manurosadilla Soup_can54 Marffe HumanDactyl __Heavy_Water Toasty Glamdring
+
+u/Spicy_burritos (Dunce Artwork + Concept), u/The_Math_Hatter, u/Different_Ad2722, u/reilywalker195, u/Geekazoid213, u/CraftyCreeper64, u/Jazzlike_Spirit_9943, u/Lazy_Tutor9447, Valunar, u/DrBacon27, u/mysterygift17, u/-Error-69, u/charsol1545, u/santh91, u/TheFunny64074, u/Any_Thanks, u/zapirate_2020, isaaciscrying, u/manurosadilla, Soup_can54, Marffe, HumanDactyl, __Heavy_Water, Toasty, Glamdring
+
+</p>

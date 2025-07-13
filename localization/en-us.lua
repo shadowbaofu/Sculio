@@ -9,7 +9,7 @@ return {
           '(Currently contains 40+ Jokers)',
           ' ',
           '{C:attention}Credits:{}',
-          '{C:money}u/crmykybord{}: Sprite Artist',
+          '{C:money}crmykybord{}: Sprite Artist',
           '{C:money}BrandonE{}: Developer',
           '{C:money}chily{}: Joker Ideas + Balancing',
           ' ',

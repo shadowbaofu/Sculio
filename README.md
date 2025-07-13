@@ -8,7 +8,7 @@ Want to playtest or contribute your own ideas to the mod? Join our discord commu
 </p>
 
 <p align="center">
-<img width="700" height="300" alt="Q A" src="https://github.com/user-attachments/assets/6c60fcbd-9110-40a1-8b78-3dc62b712cf0" />
+<img width="600" height="200" alt="Q A" src="https://github.com/user-attachments/assets/6c60fcbd-9110-40a1-8b78-3dc62b712cf0" />
 </p>
 
 **What is Sculio?**
@@ -28,7 +28,7 @@ Currently we have no intention of supporting other Balatro mods. This is our las
 Join our Discord community (in the link above) and post a detailed description of the problem in _#bugs-and-feedback_.
 
 <p align="center">
-<img width="700" height="300" alt="Installation" src="https://github.com/user-attachments/assets/054a471c-a4c8-4281-ba06-e0ce14c0a1c8" />
+<img width="600" height="200" alt="Installation" src="https://github.com/user-attachments/assets/054a471c-a4c8-4281-ba06-e0ce14c0a1c8" />
 </p>
 
 **Ensure you have <ins>SteamModded</ins> and <ins>Lovely</ins> is installed. _These are essential and the mod will not work if these are not installed. Installation instructions are below:_**
@@ -53,7 +53,7 @@ Go into steam and launch the game. Sculio should be in the mod menu and should b
 _Keep in mind that Sculio may not be compatible with other mods, and this may interfere with how stable Balatro is. Easiest way to fix this issue is to delete every other mod or to disable them._
 
 <p align="center">
-<img width="700" height="300" alt="Our team" src="https://github.com/user-attachments/assets/3e4f3f9a-0c94-4845-90e2-749cf722f8d6" />
+<img width="600" height="200" alt="Our team" src="https://github.com/user-attachments/assets/3e4f3f9a-0c94-4845-90e2-749cf722f8d6" />
 </p>
 
 **crmykybord**: _Sprite Artist_

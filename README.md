@@ -50,7 +50,7 @@ The mod folder is located in User/Appdata/Roaming/Balatro/Mods. Ensure that the 
 
 Go into steam and launch the game. Sculio should be in the mod menu and should be configurable from there. If you have any difficulties regarding the installation feel free to ask for help in ⁠our discord server.
 
-_Keep in mind that Sculio may not be compatible with other mods, and this may interfere with how stable Balatro is. Easiest way to fix this issue is to delete every other mod or to disable them._
+_Keep in mind that Sculio may not be compatible with other mods, and this may interfere with how stable Balatro is. Easiest way to fix this issue is to delete/disable every other mod._
 
 <p align="center">
 <img width="600" height="200" alt="Our team" src="https://github.com/user-attachments/assets/3e4f3f9a-0c94-4845-90e2-749cf722f8d6" />

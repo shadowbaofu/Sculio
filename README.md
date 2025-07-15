@@ -29,7 +29,7 @@ Report it in the official Balatro discord server and post a detailed description
 Join our discord community (in the link above) and with careful consideration you may be given a Playtester role. 
 
 <p align="center">
-<img width="600" height="200" alt="Installation" src="https://github.com/user-attachments/assets/054a471c-a4c8-4281-ba06-e0ce14c0a1c8" />
+<img width="600" height="200" alt="Installation" src="https://github.com/user-attachments/assets/ea30708b-490f-4148-ba4c-9982d8fe91c5" />
 </p>
 
 **Ensure you have <ins>SteamModded</ins> and <ins>Lovely</ins> is installed. _These are essential and the mod will not work if these are not installed. Installation instructions are below:_**

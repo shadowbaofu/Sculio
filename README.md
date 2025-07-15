@@ -70,3 +70,10 @@ _Keep in mind that Sculio may not be compatible with other mods, and this may in
 u/Spicy_burritos (Dunce Artwork + Concept), u/The_Math_Hatter, u/Different_Ad2722, u/reilywalker195, u/Geekazoid213, u/CraftyCreeper64, u/Jazzlike_Spirit_9943, u/Lazy_Tutor9447, Valunar, u/DrBacon27, u/mysterygift17, u/-Error-69, u/charsol1545, u/santh91, u/TheFunny64074, u/Any_Thanks, u/zapirate_2020, isaaciscrying, u/manurosadilla, Soup_can54, Marffe, HumanDactyl, __Heavy_Water, Toasty, Glamdring
 
 </p>
+
+<p align="center">
+<img width="600" height="200" alt="Collection header" src="https://github.com/user-attachments/assets/8ec65fa2-653c-4d87-966b-167b4ebad701" />
+</p>
+
+<img width="3018" height="3913" alt="Collection" src="https://github.com/user-attachments/assets/60416ca9-0208-448f-854a-9026581fa91a" />
+<img width="3018" height="3111" alt="Collection2" src="https://github.com/user-attachments/assets/717d3786-0546-48b9-8dab-c38a1b17cdff" />

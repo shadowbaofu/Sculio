@@ -72,7 +72,7 @@ u/Spicy_burritos (Dunce Artwork + Concept), u/The_Math_Hatter, u/Different_Ad272
 </p>
 
 <p align="center">
-<img width="600" height="200" alt="Collection header" src="https://github.com/user-attachments/assets/8ec65fa2-653c-4d87-966b-167b4ebad701" />
+<img width="550" height="180" alt="Collection header" src="https://github.com/user-attachments/assets/8ec65fa2-653c-4d87-966b-167b4ebad701" />
 </p>
 
 <img width="3018" height="3913" alt="Collection" src="https://github.com/user-attachments/assets/60416ca9-0208-448f-854a-9026581fa91a" />

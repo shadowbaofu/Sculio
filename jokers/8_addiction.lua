@@ -12,7 +12,7 @@ SMODS.Joker {
 
   config = { extra = { hand_count_mult = 0.5 } },
   unlocked = true,
-  discovered = true,
+  discovered = false,
   rarity = 2, -- Uncommon
   atlas = 'Sculio',
   pos = { x = 7, y = 0 },

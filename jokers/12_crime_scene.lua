@@ -13,7 +13,7 @@ SMODS.Joker {
 
   config = { extra = { mult = 0 } },
   unlocked = true,
-  discovered = true,
+  discovered = false,
   rarity = 2, -- Uncommon
   atlas = 'Sculio',
   pos = { x = 1, y = 1 },

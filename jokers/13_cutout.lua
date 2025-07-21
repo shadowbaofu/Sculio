@@ -11,7 +11,7 @@ SMODS.Joker {
 
   config = { extra = { x_mult = 0.5 } },
   unlocked = true,
-  discovered = true,
+  discovered = false,
   rarity = 3, -- Rare
   atlas = 'Sculio',
   pos = { x = 2, y = 1 },

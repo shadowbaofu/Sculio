@@ -10,7 +10,7 @@ SMODS.Joker {
   },
 
   unlocked = true,
-  discovered = true,
+  discovered = false,
   rarity = 1, -- Common
   atlas = 'Sculio',
   pos = { x = 9, y = 2 },

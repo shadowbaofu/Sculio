@@ -11,7 +11,7 @@ SMODS.Joker {
 
   config = { extra = { required_chip_percentage = 1.5 } },
   unlocked = true,
-  discovered = true,
+  discovered = false,
   rarity = 2, -- Uncommon
   atlas = 'Sculio',
   pos = { x = 5, y = 4 },

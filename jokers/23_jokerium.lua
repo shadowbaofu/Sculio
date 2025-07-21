@@ -12,7 +12,7 @@ SMODS.Joker {
 
   config = { extra = { black_holes_per_cycle = 1, boss_blinds_per_cycle = 1, boss_blinds_since_last_cycle = 0 } },
   unlocked = true,
-  discovered = true,
+  discovered = false,
   rarity = 2, -- Uncommon
   atlas = 'Sculio',
   pos = { x = 4, y = 2 },

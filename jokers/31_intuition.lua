@@ -10,7 +10,7 @@ SMODS.Joker {
 
   config = { extra = { gold_dollar_bonus = 3, steel_x_mult_bonus = 1.5 } },
   unlocked = true,
-  discovered = true,
+  discovered = false,
   rarity = 3, -- Rare
   atlas = 'Sculio',
   pos = { x = 2, y = 3 },

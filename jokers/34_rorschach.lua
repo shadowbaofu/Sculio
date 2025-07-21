@@ -11,7 +11,7 @@ SMODS.Joker {
 
   config = { extra = { card_ids_to_draw_next = {} } },
   unlocked = true,
-  discovered = true,
+  discovered = false,
   rarity = 2, -- Uncommon
   atlas = 'Sculio',
   pos = { x = 5, y = 3 },

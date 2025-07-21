@@ -11,7 +11,7 @@ SMODS.Joker {
 
   config = { extra = { money_gain = 1, triggers_per_gain = 5, triggers_since_gain = 0 } },
   unlocked = true,
-  discovered = true,
+  discovered = false,
   rarity = 2, -- Uncommon
   atlas = 'Sculio',
   pos = { x = 3, y = 3 },

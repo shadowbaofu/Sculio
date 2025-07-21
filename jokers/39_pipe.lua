@@ -1,7 +1,7 @@
 SMODS.Joker {
   key = 'pipe',
   loc_txt = {
-    name = 'Pipe Joker',
+    name = 'Treachery',
     text = {
       'After {C:attention}#1#{} rounds, sell this',
       'card to add {C:dark_edition}Negative{}',
@@ -16,7 +16,7 @@ SMODS.Joker {
   rarity = 3, -- Rare
   atlas = 'Sculio',
   pos = { x = 0, y = 4 },
-  cost = 8,
+  cost = 9,
   eternal_compat = false,
   loc_vars = function(self, info_queue, card)
     return { vars = { card.ability.extra.rounds_until_active, card.ability.extra.rounds_elapsed } }

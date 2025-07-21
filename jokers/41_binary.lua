@@ -3,7 +3,7 @@ SMODS.Joker {
   loc_txt = {
     name = 'Binary Joker',
     text = {
-      'This Joker gains has a',
+      'This Joker has a',
       '{C:green}#1# in #2#{} chance of gaining',
       '{C:chips}+#3#{} chips and {C:mult}+#4#{} Mult',
       'at the end of each blind',

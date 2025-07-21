@@ -14,7 +14,7 @@ SMODS.Joker {
   rarity = 2, -- Uncommon
   atlas = 'Sculio',
   pos = { x = 7, y = 2 },
-  cost = 8,
+  cost = 6,
   eternal_compat = false,
   calculate = function(self, card, context)
     if context.selling_self and not context.blueprint then

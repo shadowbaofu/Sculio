@@ -14,7 +14,7 @@ SMODS.Joker {
   rarity = 3, -- Rare
   atlas = 'Sculio',
   pos = { x = 2, y = 3 },
-  cost = 7,
+  cost = 9,
   blueprint_compat = true,
   loc_vars = function(self, info_queue, card)
     info_queue[#info_queue+1] = G.P_CENTERS.m_gold

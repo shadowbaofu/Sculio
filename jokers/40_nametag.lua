@@ -15,7 +15,7 @@ SMODS.Joker {
   rarity = 2, -- Uncommon
   atlas = 'Sculio',
   pos = { x = 1, y = 4 },
-  cost = 6,
+  cost = 7,
   blueprint_compat = true,
   loc_vars = function(self, info_queue, card)
     return { vars = { card.ability.extra.x_mult, card.ability.extra.x_mult_gain } }

@@ -16,7 +16,7 @@ SMODS.Joker {
   rarity = 2, -- Uncommon
   atlas = 'Sculio',
   pos = { x = 6, y = 0 },
-  cost = 8,
+  cost = 7,
   loc_vars = function(self, info_queue, card)
     return { vars = { (G.GAME.probabilities.normal or 1), card.ability.extra.odds } }
   end,

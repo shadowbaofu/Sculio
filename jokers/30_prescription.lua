@@ -18,7 +18,7 @@ SMODS.Joker {
   rarity = 2, -- Uncommon
   atlas = 'Sculio',
   pos = { x = 1, y = 3 },
-  cost = 5,
+  cost = 8,
   eternal_compat = false,
   in_pool = function (self, args)
     return G.GAME.stake >= 4 -- Black Stake

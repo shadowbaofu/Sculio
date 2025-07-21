@@ -1,12 +1,8 @@
 <p align="center">
-<img width="2524" height="1542" alt="Logo - Copy (2)" src="https://github.com/user-attachments/assets/6f4ab7b9-b270-4ccf-8890-ebcd81dedc21" />
+<img width="2594" height="1620" alt="Logo - Copy (3)" src="https://github.com/user-attachments/assets/ba433eb6-31bc-4c73-8013-71dfc9593674" />
 <img width="1186.6" height="228" alt="Description" src="https://github.com/user-attachments/assets/5fc5d51d-a0a6-4e68-9e19-c5d8a65a1161" />
-Want to playtest or contribute your own ideas to the mod? Join our discord community!
-
-<img alt="Static Badge" src="https://img.shields.io/badge/Discord-black?logo=discord&link=https%3A%2F%2Fdiscord.gg%2F2FGxcGUN5D">
-
-</p>
-
+Want early access to playtest or contribute your own ideas to the mod? Join our discord community!
+<img alt="Static Badge" src="https://img.shields.io/badge/SCULIO%2C%20Discord-black?style=flat&logo=discord&logoColor=red&link=https%3A%2F%2Fdiscord.gg%2F2FGxcGUN5D">
 <p align="center">
 <img width="600" height="200" alt="Q A" src="https://github.com/user-attachments/assets/6c60fcbd-9110-40a1-8b78-3dc62b712cf0" />
 </p>
@@ -25,10 +21,15 @@ Currently we have no intention of supporting other Balatro mods. This is our las
 
 **I found a bug in the mod. Where do I go to report it?**
 
-Join our Discord community (in the link above) and post a detailed description of the problem in _#bugs-and-feedback_.
+Report it in the official Balatro discord server and post a detailed description of the problem in _#modding, Sculio_.
+<img alt="Static Badge" src="https://img.shields.io/badge/BALATRO%2C%20Discord-black?style=flat&logo=discord&link=https%3A%2F%2Fdiscord.com%2Finvite%2Fbalatro">
+
+**I want early access to new content! Where can I find it?**
+
+Join our discord community (in the link above) and with careful consideration you may be given a Playtester role. 
 
 <p align="center">
-<img width="600" height="200" alt="Installation" src="https://github.com/user-attachments/assets/054a471c-a4c8-4281-ba06-e0ce14c0a1c8" />
+<img width="600" height="200" alt="Installation" src="https://github.com/user-attachments/assets/ea30708b-490f-4148-ba4c-9982d8fe91c5" />
 </p>
 
 **Ensure you have <ins>SteamModded</ins> and <ins>Lovely</ins> is installed. _These are essential and the mod will not work if these are not installed. Installation instructions are below:_**
@@ -69,3 +70,10 @@ _Keep in mind that Sculio may not be compatible with other mods, and this may in
 u/Spicy_burritos (Dunce Artwork + Concept), u/The_Math_Hatter, u/Different_Ad2722, u/reilywalker195, u/Geekazoid213, u/CraftyCreeper64, u/Jazzlike_Spirit_9943, u/Lazy_Tutor9447, Valunar, u/DrBacon27, u/mysterygift17, u/-Error-69, u/charsol1545, u/santh91, u/TheFunny64074, u/Any_Thanks, u/zapirate_2020, isaaciscrying, u/manurosadilla, Soup_can54, Marffe, HumanDactyl, __Heavy_Water, Toasty, Glamdring
 
 </p>
+
+<p align="center">
+<img width="550" height="190" alt="Collection header" src="https://github.com/user-attachments/assets/8ec65fa2-653c-4d87-966b-167b4ebad701" />
+</p>
+
+<img width="3018" height="3913" alt="Collection" src="https://github.com/user-attachments/assets/60416ca9-0208-448f-854a-9026581fa91a" />
+<img width="3018" height="3111" alt="Collection2" src="https://github.com/user-attachments/assets/717d3786-0546-48b9-8dab-c38a1b17cdff" />

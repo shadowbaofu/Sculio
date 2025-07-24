@@ -3,6 +3,14 @@
 <img width="1186.6" height="228" alt="Description" src="https://github.com/user-attachments/assets/5fc5d51d-a0a6-4e68-9e19-c5d8a65a1161" />
 Want early access to playtest or contribute your own ideas to the mod? Join our discord community!
 <img alt="Static Badge" src="https://img.shields.io/badge/SCULIO%2C%20Discord-black?style=flat&logo=discord&logoColor=red&link=https%3A%2F%2Fdiscord.gg%2F2FGxcGUN5D">
+<br>
+<br>
+
+<img width="3507" height="4547" alt="Collection" src="https://github.com/user-attachments/assets/d686f859-a00e-4c70-b143-cc0c6a9472b1" />
+<img width="3018" height="3111" alt="Collection2" src="https://github.com/user-attachments/assets/717d3786-0546-48b9-8dab-c38a1b17cdff" />
+<br>
+<br>
+
 <p align="center">
 <img width="600" height="200" alt="Q A" src="https://github.com/user-attachments/assets/6c60fcbd-9110-40a1-8b78-3dc62b712cf0" />
 </p>
@@ -27,6 +35,8 @@ Report it in the official Balatro discord server and post a detailed description
 **I want early access to new content! Where can I find it?**
 
 Join our discord community (in the link above) and with careful consideration you may be given a Playtester role. 
+<br>
+<br>
 
 <p align="center">
 <img width="600" height="200" alt="Installation" src="https://github.com/user-attachments/assets/ea30708b-490f-4148-ba4c-9982d8fe91c5" />
@@ -52,6 +62,8 @@ The mod folder is located in User/Appdata/Roaming/Balatro/Mods. Ensure that the 
 Go into steam and launch the game. Sculio should be in the mod menu and should be configurable from there. If you have any difficulties regarding the installation feel free to ask for help in ⁠our discord server.
 
 _Keep in mind that Sculio may not be compatible with other mods, and this may interfere with how stable Balatro is. Easiest way to fix this issue is to delete/disable every other mod._
+<br>
+<br>
 
 <p align="center">
 <img width="600" height="200" alt="Our team" src="https://github.com/user-attachments/assets/3e4f3f9a-0c94-4845-90e2-749cf722f8d6" />
@@ -68,12 +80,10 @@ _Keep in mind that Sculio may not be compatible with other mods, and this may in
 **SPECIAL THANKS TO:**
 
 u/Spicy_burritos (Dunce Artwork + Concept), u/The_Math_Hatter, u/Different_Ad2722, u/reilywalker195, u/Geekazoid213, u/CraftyCreeper64, u/Jazzlike_Spirit_9943, u/Lazy_Tutor9447, Valunar, u/DrBacon27, u/mysterygift17, u/-Error-69, u/charsol1545, u/santh91, u/TheFunny64074, u/Any_Thanks, u/zapirate_2020, isaaciscrying, u/manurosadilla, Soup_can54, Marffe, HumanDactyl, __Heavy_Water, Toasty, Glamdring
+<br>
+<br>
 
 </p>
-
 <p align="center">
-<img width="550" height="190" alt="Collection header" src="https://github.com/user-attachments/assets/8ec65fa2-653c-4d87-966b-167b4ebad701" />
+<img width="90" height="90" alt="Tags-export" src="https://github.com/user-attachments/assets/9e68c608-c416-445c-92b2-a57792771641" />
 </p>
-
-<img width="3018" height="3913" alt="Collection" src="https://github.com/user-attachments/assets/60416ca9-0208-448f-854a-9026581fa91a" />
-<img width="3018" height="3111" alt="Collection2" src="https://github.com/user-attachments/assets/717d3786-0546-48b9-8dab-c38a1b17cdff" />

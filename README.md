@@ -1,6 +1,6 @@
 <p align="center">
 <img width="2594" height="1620" alt="Logo - Copy (3)" src="https://github.com/user-attachments/assets/ba433eb6-31bc-4c73-8013-71dfc9593674" />
-<img width="1186.6" height="228" alt="Description" src="https://github.com/user-attachments/assets/5fc5d51d-a0a6-4e68-9e19-c5d8a65a1161" />
+<img width="1930" height="342" alt="srggsre" src="https://github.com/user-attachments/assets/f82b5e3a-a1ef-4ba0-b2c3-8cc6a68bba66" />
 Want early access to playtest or contribute your own ideas to the mod? Join our discord community!
 <img alt="Static Badge" src="https://img.shields.io/badge/SCULIO%2C%20Discord-black?style=flat&logo=discord&logoColor=red&link=https%3A%2F%2Fdiscord.gg%2F2FGxcGUN5D">
 <br>

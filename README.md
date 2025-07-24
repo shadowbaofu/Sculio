@@ -3,9 +3,9 @@
 <img width="1186.6" height="228" alt="Description" src="https://github.com/user-attachments/assets/5fc5d51d-a0a6-4e68-9e19-c5d8a65a1161" />
 Want early access to playtest or contribute your own ideas to the mod? Join our discord community!
 <img alt="Static Badge" src="https://img.shields.io/badge/SCULIO%2C%20Discord-black?style=flat&logo=discord&logoColor=red&link=https%3A%2F%2Fdiscord.gg%2F2FGxcGUN5D">
-<p align="center">
-<img width="550" height="190" alt="Collection header" src="https://github.com/user-attachments/assets/8ec65fa2-653c-4d87-966b-167b4ebad701" />
-</p>
+<br>
+<br>
+
 <img width="3507" height="4547" alt="Collection" src="https://github.com/user-attachments/assets/d686f859-a00e-4c70-b143-cc0c6a9472b1" />
 <img width="3018" height="3111" alt="Collection2" src="https://github.com/user-attachments/assets/717d3786-0546-48b9-8dab-c38a1b17cdff" />
 <br>

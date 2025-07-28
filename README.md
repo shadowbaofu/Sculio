@@ -29,7 +29,7 @@ Currently we have no intention of supporting other Balatro mods. This is our las
 
 **I found a bug in the mod. Where do I go to report it?**
 
-Report it in the official Balatro discord server and post a detailed description of the problem in _#modding, Sculio_.
+Report it in the official Balatro discord server by posting a detailed description of the problem in _#modding, Sculio_.
 <img alt="Static Badge" src="https://img.shields.io/badge/BALATRO%2C%20Discord-black?style=flat&logo=discord&link=https%3A%2F%2Fdiscord.com%2Finvite%2Fbalatro">
 
 **I want early access to new content! Where can I find it?**

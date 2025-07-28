@@ -3,9 +3,9 @@ SMODS.Joker {
   loc_txt = {
     name = 'Red Dragon',
     text = {
-      'This Joker gains {C:chips}+#2#{} Chips',
-      'if even number of cards played',
-      'and exactly half are less than #3#',
+      'This Joker gains {C:chips}+#2#{} Chips if hand',
+      'played contains an {C:attention}even number of cards{}',
+      'and {C:attention}exactly half{} are less than {C:attention}#3#{}',
       '{C:inactive}(Currently {C:chips}+#1#{}{C:inactive} Chips)',
     }
   },

@@ -39,7 +39,7 @@ SMODS.Joker {
         end
 
         if sold_joker.edition.type == 'polychrome' then
-          gain = 1.5 * card.ability.extra.bonus_mult
+          gain = 0.5 * card.ability.extra.bonus_mult
           message = '+ ' .. localize { type = 'variable', key = 'a_xmult', vars = { gain } }
           card.ability.extra.x_mult = card.ability.extra.x_mult + gain
         end

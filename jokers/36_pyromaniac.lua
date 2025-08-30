@@ -4,7 +4,7 @@ SMODS.Joker {
     name = 'Pyromaniac',
     text = {
       'If {C:attention}first hand{} of round is',
-      'your {C:attention}most played hand{}',
+      'your {C:attention}most played hand,{}',
       '{C:attention}level up hand #1# time{} and',
       '{C:attention}destroy scored cards{}'
       

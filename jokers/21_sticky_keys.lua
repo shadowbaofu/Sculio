@@ -35,16 +35,7 @@ SMODS.Joker {
 
       if card.ability.extra.hands_elapsed >= card.ability.extra.hands_until_change then
         first_scored_card = context.scoring_hand[1]
-        base_chips = first_scored_card.base.id
-
-        if base_chips > 10 then
-          if base_chips == 14 then
-            base_chips = 11
-          else
-            base_chips = 10
-          end
-        end
-
+        base_chips = first_scored_card.base.nominal
         card.ability.extra.mult = base_chips
         card.ability.extra.hands_elapsed = 0
 

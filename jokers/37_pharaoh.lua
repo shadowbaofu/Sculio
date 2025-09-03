@@ -21,7 +21,7 @@ SMODS.Joker {
   end,
   calculate = function(self, card, context)
     for k, v in ipairs(G.hand.cards) do
-      if v:get_id() <= 10 then
+      if v.config.center ~= G.P_CENTERS.m_stone and v:get_id() <= 10 then
         v:set_debuff(true)
       end
     end

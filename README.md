@@ -25,7 +25,7 @@ Currently we have implemented 45 new jokers, however it is unclear whether we wi
 
 **Is Sculio compatible with other Balatro Mods?**
 
-Currently we have no intention of supporting other Balatro mods. This is our last priority as _Sculio_ is meant to be played standalone with the base game.
+**Sculio is not compatible with Talisman.** Currently we have no intention of supporting other Balatro mods. This is our last priority as _Sculio_ is meant to be played standalone with the base game.
 
 **I found a bug in the mod. Where do I go to report it?**
 

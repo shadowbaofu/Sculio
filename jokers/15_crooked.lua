@@ -1,13 +1,5 @@
 SMODS.Joker {
   key = 'crooked',
-  loc_txt = {
-    name = 'Crooked Joker',
-    text = {
-      '{C:attention}+#1#{} hand size,',
-      'steals {C:money}$#2#{} every round.',
-      'Destroyed if money reaches {C:money}$#3#{}',
-    }
-  },
 
   config = { extra = { hand_size_bonus = 3, steal = 3, money_min = 0 } },
   unlocked = true,

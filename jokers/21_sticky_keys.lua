@@ -1,15 +1,5 @@
 SMODS.Joker {
   key = 'sticky_keys',
-  loc_txt = {
-    name = 'Sticky Keys',
-    text = {
-      'Changes {C:mult}Mult{} to {C:attention}base chips{}',
-      'of {C:attention}first scoring card{}',
-      'every {C:attention}#2#{} hands played',
-      '{C:inactive}#3# remaining{}',
-      '{C:inactive}(Currently {C:mult}+#1#{}{C:inactive} Mult)',
-    }
-  },
 
   config = { extra = { mult = 0, hands_until_change = 3, hands_elapsed = 0 } },
   unlocked = true,
@@ -34,8 +24,16 @@ SMODS.Joker {
       card.ability.extra.hands_elapsed = card.ability.extra.hands_elapsed + 1
 
       if card.ability.extra.hands_elapsed >= card.ability.extra.hands_until_change then
-        first_scored_card = context.scoring_hand[1]
-        base_chips = first_scored_card.base.nominal
+        base_chips = context.full_hand[1].base.id
+
+        if base_chips > 10 then
+          if base_chips == 14 then
+            base_chips = 11
+          else
+            base_chips = 10
+          end
+        end
+
         card.ability.extra.mult = base_chips
         card.ability.extra.hands_elapsed = 0
 

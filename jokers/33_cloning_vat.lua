@@ -1,13 +1,5 @@
 SMODS.Joker {
   key = 'cloning_vat',
-  loc_txt = {
-    name = 'Cloning Vat',
-    text = {
-      'When a {C:attention}playing card{}',
-      'is {C:attention}purchased{}, add a',
-      '{C:attention}permanent copy{} to deck'
-    },
-  },
 
   unlocked = true,
   discovered = false,

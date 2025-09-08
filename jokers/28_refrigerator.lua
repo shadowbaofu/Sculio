@@ -1,13 +1,5 @@
 SMODS.Joker {
   key = 'refrigerator',
-  loc_txt = {
-    name = 'Refrigerator',
-    text = {
-      '{C:attention}Refrigerable Jokers{}',
-      'placed {C:attention}to the right of this Joker{}',
-      'do not {C:attention}lose potency{} or {C:attention}expire{}'
-    }
-  },
 
   unlocked = true,
   discovered = false,

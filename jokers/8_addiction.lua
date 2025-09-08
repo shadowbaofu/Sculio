@@ -1,14 +1,5 @@
 SMODS.Joker {
   key = 'addiction',
-  loc_txt = {
-    name = 'Addiction',
-    text = {
-      'If you play your most played hand,',
-      'each scored {C:attention}card{} permanently gains',
-      '{C:chips}chips{} equal to {C:attention}#1#% of the number{}',
-      '{C:attention}of times it has been played{}'
-    }
-  },
 
   config = { extra = { hand_count_mult = 0.5 } },
   unlocked = true,

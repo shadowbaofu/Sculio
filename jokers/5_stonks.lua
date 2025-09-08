@@ -1,13 +1,5 @@
 SMODS.Joker {
   key = 'stonks',
-  loc_txt = {
-    name = 'Wall Street Joker',
-    text = {
-      'The {C:mult}+Mult{} for this Joker',
-      '{C:attention}doubles{} after every boss blind',
-      '{C:inactive}(Currently {C:mult}+#1#{}{C:inactive} Mult)'
-    }
-  },
 
   config = { extra = { mult = 2 } },
   unlocked = true,

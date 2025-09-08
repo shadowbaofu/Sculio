@@ -1,12 +1,5 @@
 SMODS.Joker {
   key = 'effigy',
-  loc_txt = {
-    name = 'Effigy',
-    text = {
-      'Copies ability of a',
-      '{C:attention}random Joker{}'
-    }
-  },
 
   unlocked = true,
   discovered = false,

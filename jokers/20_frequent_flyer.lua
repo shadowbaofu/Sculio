@@ -1,14 +1,5 @@
 SMODS.Joker {
   key = 'frequent_flyer',
-  loc_txt = {
-    name = 'Frequent Flyer',
-    text = {
-      'For every {C:money}$#4#{} {C:inactive}[$#5#]{} spent',
-      'in shop, earn {C:money}$#1#{}',
-      'and {C:mult}+#3# Mult{}',
-      '{C:inactive}(Currently {C:mult}+#2#{}{C:inactive} Mult)'
-    }
-  },
 
   config = { extra = { money_gain = 3, mult = 0, mult_gain = 4, spend_per_gain = 30, spent_since_gain = 0 } },
   unlocked = true,

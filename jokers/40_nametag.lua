@@ -1,13 +1,5 @@
 SMODS.Joker {
   key = 'nametag',
-  loc_txt = {
-    name = 'Nametag',
-    text = {
-      'This Joker gains {X:mult,C:white} X#2# {} Mult',
-      'every time a {C:attention}Joker{} is sold',
-      '{C:inactive}(Currently {X:mult,C:white} X#1# {C:inactive} Mult)'
-    }
-  },
 
   config = { extra = { x_mult = 1, x_mult_gain = 0.15 } },
   unlocked = true,

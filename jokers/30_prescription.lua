@@ -1,16 +1,5 @@
 SMODS.Joker {
   key = 'prescription',
-  loc_txt = {
-    name = 'Prescription',
-    text = {
-      'After {C:attention}#1#{} rounds,',
-      'sell this card to {C:attention}remove{}',
-      'all {C:attention}Ailments{} from all',
-      '{C:attention}owned Jokers{} and',
-      '{C:attention}rebuff perished Jokers{}',
-      '{C:inactive}(Currently {C:attention}#2#{C:inactive} / #1#)'
-    }
-  },
 
   config = { extra = { rounds_until_active = 2, rounds_elapsed = 0 } },
   unlocked = true,

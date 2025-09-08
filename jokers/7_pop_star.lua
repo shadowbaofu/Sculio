@@ -1,14 +1,5 @@
 SMODS.Joker {
   key = 'pop_star',
-  loc_txt = {
-    name = 'Pop Star',
-    text = {
-      '{C:green}#1# in #2#{} chance',
-      'for {C:attention}each scored card{}',
-      'to gain a {C:attention}new{},',
-      '{C:attention}random enhancement{}'
-    }
-  },
 
   config = { extra = { odds = 4 } },
   unlocked = true,

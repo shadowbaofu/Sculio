@@ -1,14 +1,5 @@
 SMODS.Joker {
   key = 'mahjong',
-  loc_txt = {
-    name = 'Red Dragon',
-    text = {
-      'This Joker gains {C:chips}+#2#{} Chips if hand',
-      'played contains an {C:attention}even number of cards{}',
-      'and {C:attention}exactly half{} are less than {C:attention}#3#{}',
-      '{C:inactive}(Currently {C:chips}+#1#{}{C:inactive} Chips)',
-    }
-  },
 
   config = { extra = { chips = 0, chips_gain = 5, less_than = 7 } },
   unlocked = true,

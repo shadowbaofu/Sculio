@@ -1,14 +1,5 @@
 SMODS.Joker {
   key = 'bad_trip',
-  loc_txt = {
-    name = 'Bad Trip',
-    text = {
-      'After {C:attention}#1#{} rounds, sell this card to',
-      '{C:attention}randomize{} the {C:attention}rank and suit{}',
-      'of every card in deck',
-      '{C:inactive}(Currently {C:attention}#2#{C:inactive} / #1#)'
-    }
-  },
 
   config = { extra = { rounds_until_active = 2, rounds_elapsed = 0 } },
   unlocked = true,

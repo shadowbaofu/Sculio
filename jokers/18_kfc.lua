@@ -1,14 +1,5 @@
 SMODS.Joker {
   key = 'kfc',
-  loc_txt = {
-    name = 'Chicken Coupon',
-    text = {
-      'Steals {C:money}$#2#{} of {C:attention}sell{} value from every other',
-      '{C:attention}Joker{} if available at the end of a blind',
-      'Gains {X:mult,C:white}X#3#{} Mult for each {C:money}$#4#{} stolen',
-      '{C:inactive}(Currently {X:mult,C:white}X#1#{}{C:inactive} Mult)'
-    }
-  },
 
   config = { extra = { x_mult = 1, dollar_steal = 1, x_mult_scale = 0.1, dollar_scale = 1 } },
   unlocked = true,

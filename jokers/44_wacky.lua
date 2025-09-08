@@ -1,13 +1,5 @@
 SMODS.Joker {
   key = 'wacky',
-  loc_txt = {
-    name = 'Car Sale',
-    text = {
-      'Create a copy of {C:tarot}The Fool{} if hand scores',
-      'at least {C:attention}#1#%{} of required chips',
-      '{C:inactive}(Must have room){}'
-    }
-  },
 
   config = { extra = { required_chip_percentage = 1.5 } },
   unlocked = true,

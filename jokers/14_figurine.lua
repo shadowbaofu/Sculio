@@ -1,13 +1,5 @@
 SMODS.Joker {
   key = 'figurine',
-  loc_txt = {
-    name = 'Figurine',
-    text = {
-      'When a Joker with an {C:attention}edition{} is sold,',
-      'this Joker gains {C:attention}#4#%{} of the {C:attention}edition\'s bonus{}',
-      '{C:inactive}(Currently {C:chips}+#1#{}{C:inactive} Chips, {C:mult}+#2#{}{C:inactive} Mult, and {X:mult,C:white}X#3#{}{C:inactive} Mult)'
-    }
-  },
 
   config = { extra = { chips = 0, mult = 0, x_mult = 1, bonus_mult = 1 } },
   unlocked = true,

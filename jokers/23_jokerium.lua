@@ -1,19 +1,10 @@
 SMODS.Joker {
   key = 'jokerium',
-  loc_txt = {
-    name = 'Jokerium',
-    text = {
-      'Adds {C:attention}#1#{} {C:dark_edition}Negative{}',
-      '{C:spectral}Black Hole{} card each time',
-      '{C:attention}#2# {C:attention}Boss Blind{} is defeated',
-      '{C:inactive}#3# remaining{}',
-    }
-  },
 
   config = { extra = { black_holes_per_cycle = 1, boss_blinds_per_cycle = 1, boss_blinds_since_last_cycle = 0 } },
   unlocked = true,
   discovered = false,
-  rarity = 2, -- Uncommon
+  rarity = 3, -- Rare
   atlas = 'Sculio',
   pos = { x = 4, y = 2 },
   cost = 7,

@@ -1,13 +1,5 @@
 SMODS.Joker {
   key = 'puck',
-  loc_txt = {
-    name = 'Puck',
-    text = {
-      'When a card with an {C:attention}edition{} is scored,',
-      'this Joker gains {C:attention}#4#%{} of the {C:attention}edition\'s bonus{}',
-      '{C:inactive}(Currently {C:chips}+#1#{}{C:inactive} Chips, {C:mult}+#2#{}{C:inactive} Mult, and {X:mult,C:white}X#3#{}{C:inactive} Mult)'
-    }
-  },
 
   config = { extra = { chips = 0, mult = 0, x_mult = 1, bonus_mult = 1 } },
   unlocked = true,

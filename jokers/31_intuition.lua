@@ -1,12 +1,5 @@
 SMODS.Joker {
   key = 'intuition',
-  loc_txt = {
-    name = 'Intuition',
-    text = {
-      'Scored {C:attention}Gold Cards{} give {C:money}$#1#{}.',
-      'Scored {C:attention}Steel Cards{} give {X:mult,C:white}X#2#{} Mult'
-    }
-  },
 
   config = { extra = { gold_dollar_bonus = 3, steel_x_mult_bonus = 1.5 } },
   unlocked = true,

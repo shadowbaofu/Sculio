@@ -1,18 +1,9 @@
 SMODS.Joker {
   key = 'dunce',
-  loc_txt = {
-    name = 'Dunce',
-    text = {
-      'Copies the ability of the',
-      '{C:attention}rightmost{} Joker and',
-      'temporarily disables Joker',
-      '{C:attention}to the right{}',
-    }
-  },
 
   unlocked = true,
   discovered = false,
-  rarity = 3, -- Rare
+  rarity = 2, -- Uncommon
   atlas = 'Sculio',
   pos = { x = 0, y = 2 },
   cost = 10,

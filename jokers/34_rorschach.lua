@@ -1,13 +1,5 @@
 SMODS.Joker {
   key = 'rorschach',
-  loc_txt = {
-    name = 'Rorschach',
-    text = {
-      'Cards in the {C:attention}first discard{} made',
-      'while {C:attention}this is the rightmost Joker{}',
-      'will be {C:attention}drawn first next blind{}'
-    }
-  },
 
   config = { extra = { card_ids_to_draw_next = {} } },
   unlocked = true,

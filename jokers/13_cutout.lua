@@ -1,13 +1,5 @@
 SMODS.Joker {
   key = 'cutout',
-  loc_txt = {
-    name = 'Joker Cutout',
-    text = {
-      '{X:red,C:white} X#1# {} Mult for each',
-      '{C:attention}other{} occupied {C:attention}Joker{} slot',
-      '{C:inactive}(Currently {X:red,C:white} X#2# {C:inactive} Mult)',
-    }
-  },
 
   config = { extra = { x_mult = 0.5 } },
   unlocked = true,

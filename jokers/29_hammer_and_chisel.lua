@@ -1,14 +1,5 @@
 SMODS.Joker {
   key = 'hammer_and_chisel',
-  loc_txt = {
-    name = 'Hammer and Chisel',
-    text = {
-      'Scored {C:attention}Stone Cards{}',
-      'permanently gain {C:chips}+#3#{} chips',
-      'with a {C:green}#1# in #2#{} chance',
-      'of {C:attention}being destroyed{}',
-    }
-  },
 
   config = { extra = { chip_perma_bonus = 15, shatter_odds = 10 } },
   unlocked = true,

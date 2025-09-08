@@ -21,7 +21,7 @@ SMODS.Joker {
     return { vars = { (G.GAME.probabilities.normal or 1) * 100, card.ability.extra.odds } }
   end,
   calculate = function(self, card, context)
-    if context.cardarea == G.play and context.repetition and not context.repetition_only and context.other_card.config.center ~= G.P_CENTERS.m_stone then
+    if context.cardarea == G.play and context.repetition and not context.repetition_only then
       card_id = context.other_card:get_id()
 
       if card_id < 11 and pseudorandom('anatomy') < (G.GAME.probabilities.normal * card_id) / card.ability.extra.odds then

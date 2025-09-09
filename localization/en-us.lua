@@ -290,7 +290,7 @@ return {
         text = {
           'When this Joker is {C:attention}sold{}, it',
           'gains {X:mult,C:white} X#2# {} Mult and',
-          '{C:attention}returns to the next shop{}.',
+          '{C:attention}returns to the next shop roll{}.',
           '{C:attention}Sell value{} starts at {C:money}$#3#{}',
           '{C:inactive}(Currently {X:mult,C:white} X#1# {C:inactive} Mult)',
         },
@@ -379,15 +379,15 @@ return {
           'If {C:attention}first hand{} of round is',
           'your {C:attention}most played hand,{}',
           '{C:attention}level up hand #1# time{} and',
-          '{C:attention}destroy scored cards{}'
+          '{C:attention}destroy cards in that hand{}'
         },
       }, 
       -- 37. Pharaoh
       j_Sculio_pharaoh = {
         name = 'Pharaoh',
         text = {
-          'All {C:attention}number cards{} are',
-          '{C:attention}debuffed{}, {C:attention}face cards{}',
+          'All {C:attention}non-face cards{}',
+          'are {C:attention}debuffed{}, {C:attention}face cards{}',
           'give {X:mult,C:white}X#1#{} Mult when scored'
         },
       }, 

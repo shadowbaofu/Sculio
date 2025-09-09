@@ -13,7 +13,7 @@ SMODS.Joker {
   end,
   calculate = function(self, card, context)
     for k, v in ipairs(G.hand.cards) do
-      if v:get_id() <= 10 then
+      if not v:is_face() then
         v:set_debuff(true)
       end
     end

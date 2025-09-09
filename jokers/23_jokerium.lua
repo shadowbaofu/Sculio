@@ -21,8 +21,6 @@ SMODS.Joker {
       if card.ability.extra.boss_blinds_since_last_cycle >= card.ability.extra.boss_blinds_per_cycle then
         card.ability.extra.boss_blinds_since_last_cycle = 0
 
-        G.GAME.consumeable_buffer = G.GAME.consumeable_buffer + card.ability.extra.black_holes_per_cycle
-
         for i = 1, card.ability.extra.black_holes_per_cycle, 1 do
           G.E_MANAGER:add_event(Event({
             delay = 0.0,
@@ -31,7 +29,6 @@ SMODS.Joker {
               card:set_edition({negative = true}, true)
               card:add_to_deck()
               G.consumeables:emplace(card)
-              G.GAME.consumeable_buffer = 0
               return true
             end
           }))

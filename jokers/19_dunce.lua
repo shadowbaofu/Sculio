@@ -3,7 +3,7 @@ SMODS.Joker {
 
   unlocked = true,
   discovered = false,
-  rarity = 2, -- Uncommon
+  rarity = 3, -- Rare
   atlas = 'Sculio',
   pos = { x = 0, y = 2 },
   cost = 10,

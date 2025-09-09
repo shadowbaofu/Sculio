@@ -1,13 +1,13 @@
 SMODS.Joker {
   key = 'unstoppable',
 
-  config = { extra = { x_mult = 1, x_mult_gain = 0.25, sell_cost = 0 } },
+  config = { extra = { x_mult = 1, x_mult_gain = 0.1, sell_cost = 0 } },
   unlocked = true,
   discovered = false,
   rarity = 2, -- Uncommon
   atlas = 'Sculio',
   pos = { x = 8, y = 2 },
-  cost = 7,
+  cost = 6,
   eternal_compat = false,
   blueprint_compat = true,
   loc_vars = function(self, info_queue, card)

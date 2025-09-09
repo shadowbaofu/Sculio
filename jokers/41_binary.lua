@@ -1,15 +1,5 @@
 SMODS.Joker {
   key = 'binary',
-  loc_txt = {
-    name = 'Binary Joker',
-    text = {
-      'This Joker has a',
-      '{C:green}#1# in #2#{} chance of gaining',
-      '{C:chips}+#3#{} chips and {C:mult}+#4#{} Mult',
-      'at the end of each blind',
-      '{C:inactive}(Currently {C:chips}+#5#{}{C:inactive} Chips and {C:mult}+#6#{} Mult)'
-    }
-  },
 
   config = { extra = { odds = 2, chips_gain = 10, mult_gain = 2, chips = 0, mult = 0 } },
   unlocked = true,

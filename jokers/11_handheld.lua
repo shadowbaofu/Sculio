@@ -36,13 +36,6 @@ end
 
 SMODS.Joker {
   key = 'handheld',
-  loc_txt = {
-    name = 'Handheld',
-    text = {
-      'All cards are treated',
-      'like {C:attention}Wild Cards{}'
-    }
-  },
 
   unlocked = true,
   discovered = false,

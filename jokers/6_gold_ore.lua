@@ -1,12 +1,5 @@
 SMODS.Joker {
   key = 'gold_ore',
-  loc_txt = {
-    name = 'Gold Ore',
-    text = {
-      'Scored {C:attention}Stone Cards{}',
-      'gain a {C:attention}Gold Seal{}'
-    }
-  },
 
   unlocked = true,
   discovered = false,

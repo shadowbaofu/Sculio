@@ -1,13 +1,5 @@
 SMODS.Joker {
   key = 'pharaoh',
-  loc_txt = {
-    name = 'Pharaoh',
-    text = {
-      'All {C:attention}number cards{} are',
-      '{C:attention}debuffed{}, {C:attention}face cards{}',
-      'give {X:mult,C:white}X#1#{} Mult when scored'
-    }
-  },
 
   config = { extra = { x_mult_bonus = 1.5 } },
   unlocked = true,
@@ -21,7 +13,7 @@ SMODS.Joker {
   end,
   calculate = function(self, card, context)
     for k, v in ipairs(G.hand.cards) do
-      if v.config.center ~= G.P_CENTERS.m_stone and v:get_id() <= 10 then
+      if v:get_id() <= 10 then
         v:set_debuff(true)
       end
     end

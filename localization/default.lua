@@ -12,6 +12,7 @@ return {
           '{C:money}crmykybord{}: Sprite Artist',
           '{C:money}BrandonE{}: Developer',
           '{C:money}chily{}: Joker Ideas + Balancing',
+          '{C:money}Marffe{}: Ideas and Loc files for translation',
           ' ',
           '{C:attention}Special Thanks (Joker Ideas):{}',
           '{C:inactive}u/Spicy_burritos (Dunce Artwork + Concept), u/The_Math_Hatter,',
@@ -19,7 +20,7 @@ return {
           '{C:inactive}u/Jazzlike_Spirit_9943, u/Lazy_Tutor9447, Valunar, u/DrBacon27,',
           '{C:inactive}u/mysterygift17, u/-Error-69, u/charsol1545, u/santh91, u/TheFunny64074,',
           '{C:inactive}u/Any_Thanks, u/zapirate_2020, isaaciscrying, u/manurosadilla,',
-          '{C:inactive}Soup_can54, Marffe, HumanDactyl, __Heavy_Water, Toasty, Glamdring',
+          '{C:inactive}Soup_can54, HumanDactyl, __Heavy_Water, Toasty, Glamdring',
         }
       }
     },

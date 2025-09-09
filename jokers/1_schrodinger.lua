@@ -1,12 +1,5 @@
 SMODS.Joker {
   key = 'schrodinger',
-  loc_txt = {
-    name = 'Schrödinger\'s Joker',
-    text = {
-      '{C:green}#1# in #2#{} chance',
-      'for {X:mult,C:white}X#3#{} Mult'
-    }
-  },
 
   config = { extra = { odds = 2, x_mult = 2 } },
   unlocked = true,

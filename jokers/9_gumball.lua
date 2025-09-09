@@ -1,14 +1,5 @@
 SMODS.Joker {
   key = 'gumball',
-  loc_txt = {
-    name = 'Gumball Machine',
-    text = {
-      '{C:mult}+#2#{} Mult when a {C:attention}booster pack{} is opened',
-      '{C:mult}#3#{} Mult when a {C:attention}booster pack{} is skipped',
-      'Destroyed if Mult reaches {C:mult}+#4#{} Mult',
-      '{C:inactive}(Currently {C:mult}+#1#{}{C:inactive} Mult)'
-    }
-  },
 
   config = { extra = { mult = 3, mult_add_open = 2, mult_add_skip = -4, mult_min = 0 } },
   unlocked = true,

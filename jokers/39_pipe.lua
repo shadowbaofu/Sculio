@@ -1,14 +1,5 @@
 SMODS.Joker {
   key = 'pipe',
-  loc_txt = {
-    name = 'Treachery',
-    text = {
-      'After {C:attention}#1#{} rounds, sell this',
-      'card to add {C:dark_edition}Negative{}',
-      'to a random {C:attention}Joker',
-      '{C:inactive}(Currently {C:attention}#2#{C:inactive} / #1#)'
-    }
-  },
 
   config = { extra = { rounds_until_active = 2, rounds_elapsed = 0 } },
   unlocked = true,

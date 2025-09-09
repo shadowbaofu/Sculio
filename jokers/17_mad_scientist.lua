@@ -1,14 +1,5 @@
 SMODS.Joker {
   key = 'mad_scientist',
-  loc_txt = {
-    name = 'Mad Scientist',
-    text = {
-      'When {C:attention}Blind{} is selected,',
-      'convert Joker to the right',
-      'into another Joker',
-      'Joker of equal {C:attention}rarity{}'
-    }
-  },
 
   unlocked = true,
   discovered = false,

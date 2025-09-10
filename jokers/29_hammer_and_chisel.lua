@@ -1,7 +1,7 @@
 SMODS.Joker {
   key = 'hammer_and_chisel',
 
-  config = { extra = { chip_perma_bonus = 15, shatter_odds = 0 } },
+  config = { extra = { chip_perma_bonus = 15, shatter_odds = 10 } },
   unlocked = true,
   discovered = false,
   rarity = 1, -- Common

@@ -1,7 +1,7 @@
 SMODS.Joker {
   key = 'addiction',
 
-  config = { extra = { hand_count_mult = 0.5 } },
+  config = { extra = { hand_count_mult = 1.0 } },
   unlocked = true,
   discovered = false,
   rarity = 2, -- Uncommon
